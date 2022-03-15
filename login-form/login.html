@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <title>Partina | Login</title>
+</head>
+<body>
+    <section action="" method="get" class="form">
+        <h1>Welcome to Partina</h1>
+        <div class="sign" id="sign">
+            <button type="button" class="active" id="signin" onclick="signin()">Sign in</button>
+            <button type="button" id="signup" onclick="signup()">Sign up</button>    
+        </div>
+
+        <!--Start Sign in-->
+		<div id="first">
+        <form action="" method="" id="signin">
+            <div class="inpts">
+                <div class="user">
+                    <label for="user" class="lbl">E-mail</label>
+                    <input type="email" name="user" id="user" placeholder="example@gmail.com" required>
+                    <img src="">
+                </div>
+                <div class="pw">
+                    <label for="pw" class="lbl">Password</label>
+                    <input type="password" name="pw" id="pw" placeholder="***************" required>
+                    <img src="">
+                </div>
+                <button type="submit" id="submit-btn">Log in</button>
+                <div class="check">
+                    <input type="checkbox" id="check"> <!--dont have css add it-->
+                    <label for="check">Remember me</label>
+                </div>
+                <h4>Or log in with</h4>
+                <div class="soc-login">
+                    <button><span><i class="fa-brands fa-facebook"></i></span>Facebook</button>
+                    <button><span><i class="fa-brands fa-facebook"></i></span>Google</button>
+                </div>
+    
+            </div>
+    
+        </form>
+		</div>
+        <!--End Sign in-->
+
+        <!--Start Sign up -->
+		<div id="second">
+        <form action="" method="" id="signup">
+            <div class="inpts">
+                <div class="input-container">
+                    <div class="user">
+                        <label for="username" class="lbl">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Username" required>
+                        <img src="">
+                    </div>
+    
+                    <div class="user">
+                        <label for="user-reg" class="lbl">E-mail</label>
+                        <input type="email" name="user" id="user-reg" placeholder="example@gmail.com" required>
+                        <img src="">
+                    </div>
+                    <div class="pw">
+                        <label for="pw-reg" class="lbl">Password</label>
+                        <input type="password" name="pw" id="pw-reg" placeholder="***************" required>
+                        <img src="">
+                    </div>
+    
+                </div>
+
+                <button type="submit" id="submit-btn-reg">Sign up</button>
+                <div class="check">
+                    <input type="checkbox" id="check-privecy" required> <!--dont have css add it-->
+                    <label for="check-privecy">Accept <a href="#" target="_blank">privecy policy</a> </label>
+                </div>
+
+                <h4>Or Sign up with</h4>
+                <div class="soc-login">
+                    <button><span><i class="fa-brands fa-facebook"></i></span>Facebook</button>
+                    <button><span><i class="fa-brands fa-facebook"></i></span>Google</button>
+                </div>
+    
+            </div>
+    
+        </form>
+		</div>
+        <!--End Sign up-->
+    </section>
+</body>
+<script src="./js/jquery3.4.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!--Custom JQuery File-->
+<script src="./js/master.js"></script>
+
+</html>

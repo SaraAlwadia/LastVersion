@@ -1,0 +1,159 @@
+@import url('../css/fonts.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--Roborto);
+}
+body{
+    background: #eee;
+}
+
+:root{
+    /*Theme Color*/
+    --main_color: #ff8d8d;
+    --second_color: #272c32;
+    --btn_color: #3f4551;
+    --white_color: #FFF;
+    --shadow-color: #888
+    /*Theme font-family*/
+    --Roborto: 'Roboto', 'sans-serif';
+    --Roboto-Slab: 'Roboto-Slab', 'sans-serif';
+
+}
+
+input[type='email'],
+input[type='text'],
+form #submit-btn,
+form #submit-btn-reg{
+    border: 1px solid var(--btn_color);
+    height: 8vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+input:focus{
+    outline: none;
+    border-color: var(--main_color);
+}
+input::placeholder{
+
+    font-size: 15px;
+} 
+
+
+section.form{
+    margin: 30px auto;
+    width: 60%;
+    height: 90vh;
+    font-family: var(--Roborto);
+    padding: 5vh 10vw;
+    background: var(--white_color);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px var(--shadow-color);
+}
+
+section .sign{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section.form h1{
+    margin: 0px auto 25px;
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--second_color);
+}
+section .sign button{
+    font-size: 1.7rem;
+    color: var(--btn_color);
+    background: var(--white_color);
+    /* margin-bottom: 50px; */
+    cursor: pointer;
+    border: none;
+}
+section #signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section #signin .user{
+    display: flex;
+    flex-direction: column;
+}
+
+form label.lbl{
+    color: var(--main_color);
+    font-size: 1.2rem;
+    padding: 3px;
+    background: var(--white_color);
+    width: 17%;
+    position: relative;
+    left: 13px;
+    top: 22px;
+}
+
+form #submit-btn,
+form #submit-btn-reg{
+    background: var(--main_color);
+    color: var(--white_color);
+    height: 7vh;
+    line-height: .2;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    margin: auto;
+    padding:auto;
+}
+
+.check{
+    display: flex;
+    flex-direction: row;
+    margin: 15px auto;
+} 
+
+.check input[type='checkbox']{
+    border: 1px solid var(--second_color);
+    height: 17px;
+    width: 17px;
+    cursor: pointer;
+    
+}
+.check label{
+    margin-left: 3px;
+    cursor: pointer;
+}
+h4{
+text-align: center;
+font-size: 1.3rem;
+color: var(--btn_color);
+}
+.soc-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.soc-login button{
+    width: calc(97%/2);
+    height: 6vh;
+    border-radius: 10px;
+    border: 1px solid var(--btn_color);
+    background: var(--white_color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+#signin{
+    left: 50px;
+}
+
+#signin{
+    right: 450px;
+} 
