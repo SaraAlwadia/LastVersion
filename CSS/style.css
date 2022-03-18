@@ -271,7 +271,7 @@ h2 {
 
 /*Start Stores Section*/
 #explore{
-  width: 100%;
+  /* width: 100%; */
   height:fit-content;
   padding: 15px;
   text-align: center;
