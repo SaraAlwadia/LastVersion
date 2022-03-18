@@ -1,12 +1,13 @@
-@import url('../css/fonts.css');
+@import url('../../Fonts/fonts.css');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--Roborto);
 }
 body{
     background: #eee;
+    font-family: var(--Roborto);
+
 }
 
 :root{
@@ -16,7 +17,6 @@ body{
     --btn_color: #3f4551;
     --white_color: #FFF;
     --shadow-color: #888
-    /*Theme font-family*/
     --Roborto: 'Roboto', 'sans-serif';
     --Roboto-Slab: 'Roboto-Slab', 'sans-serif';
 }
