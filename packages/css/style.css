@@ -6,10 +6,10 @@
 }
 
 body{
-    background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 87%, rgba(56,56,56,1) 100%);
-    background-repeat: no-repeat;
-    font-family: var(--Roborto);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 5%, rgba(241,241,241,1) 17%);
+    width: 92%;
+    margin: 0 4%;
 }
 
 
@@ -25,9 +25,10 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 87%, rgba(56,56,56,1) 100%
 }
 
 main.container section.package-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 section.nav{
@@ -36,7 +37,7 @@ section.nav{
 
 .container{
     width: 70vw;
-    margin: 4vh auto;
+    margin: 2.4vh auto;
 }
 
 .capitalize{
@@ -60,10 +61,10 @@ section.header h1 span{
 }
 
 section.header #pick-package{
-    width: 35%;
+    width: 37%;
     height: 6vh;
     padding: 1.5vh  1.5vw;
-    margin: 5vh;
+    margin-top: 5vh;
     background: var(--main_color);
     color: var(--white_color);
     font-size: 1rem;
@@ -71,6 +72,8 @@ section.header #pick-package{
     border-radius: 10px;
     border: none;
 }
+
+
 
 section.ready-pack{
     margin: 10vh auto;
@@ -87,9 +90,10 @@ section.ready-pack h2{
     height: 380px;
     background-color: var(--white_color);
     border-radius: 15px;
-    padding: 15px;
+    padding: 10px;
     text-align: start;
-    box-shadow: 0px 0px 15px var(--shadow-color)
+    box-shadow: 0px 0px 15px var(--shadow-color);
+    margin: 1.5rem 0;
 }
 
 #box-card{
@@ -102,7 +106,7 @@ section.ready-pack h2{
     width: 100%;
     height: 50%;
     border-radius: 10px;
-    background: red;
+    background: #333;
 }
 
 #card1 h2,
@@ -114,7 +118,9 @@ section.ready-pack h2{
 .show-more{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 #card1 .btn{
     display: flex;
@@ -140,3 +146,39 @@ section.ready-pack h2{
 }
 
 /***************/
+
+/*******************Responsive*********************/
+@media only screen and (max-width: 963px){
+    #card1{
+        width:  calc(100%/2 - 2vw);
+    }
+    section.header{
+        font-size: .9rem;
+    }
+
+    section.header #pick-package{
+        width: 55%;
+        font-size: .8rem;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 660px){
+    #card1{
+        width:  calc(100% - 2vw);
+    }
+    section.header{
+        font-size: .82rem;
+    }
+    section.header #pick-package{
+        width: 90%;
+        font-size: .8rem;
+    }
+
+    section.ready-pack h2{
+        font-size: 1.5rem;
+
+    }
+    
+}

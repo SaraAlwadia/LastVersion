@@ -15,13 +15,13 @@ const responsive = {
 
 $(document).ready(function() {
     /*Active class**************************************************** */
-    // $nav = $('.nav');
-    // $toggleCollapse = $('.toggle-collapse');
+    $nav = $('.nav');
+    $toggleCollapse = $('.toggle-collapse');
 
-    // /**click event on toggle menu */
-    // $toggleCollapse.click(function() {
-    //     $nav.toggleClass('collapse');
-    // });
+    /**click event on toggle menu */
+    $toggleCollapse.click(function() {
+        $nav.toggleClass('collapse');
+    });
     /*Active class**************************************************** */
 
     $('.owl-carousel').owlCarousel({
@@ -29,7 +29,7 @@ $(document).ready(function() {
         autoplay: false,
         autoplayTimeout: 3000,
         //center: true,
-        nav: true,
+        //nav: true,
         // navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
         responsive:{
             0:{
@@ -43,6 +43,34 @@ $(document).ready(function() {
             }
         }
     });
+
+    // //chevron left and right
+    // var leftArrow = $(".partener .fa-chevron-left"),
+    //     rightArrow = $(".partener .fa-chevron-right");
+
+    // function checkClient() {
+
+    //     $('.partener-logo:first').hasClass('active') ? leftArrow.fadeOut() : leftArrow.fadeIn();
+    //     $('.partener-logo:last').hasClass('active') ? rightArrow.fadeOut() : rightArrow.fadeIn();
+
+    // }
+
+    // checkClient();
+
+    // $(".partener i").click(function() {
+    //     if ($(this).hasClass("fa-chevron-right")) {
+    //         $(".partener .active").fadeOut(100, function() {
+    //             $(this).removeClass("active").next(".partener-logo").addClass("active").fadeIn();
+    //             checkClient();
+    //         });
+    //     } else {
+    //         $(".partener .active").fadeOut(100, function() {
+    //             $(this).removeClass("active").prev(".partener-logo").addClass("active").fadeIn();
+    //             checkClient();
+    //         });
+    //     }
+    // });
+
 
     // click to scroll top
     $('.move-up span').click(function() {

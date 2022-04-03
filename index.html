@@ -9,7 +9,6 @@
     />
     <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="" />
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,8 +18,10 @@
     />
     <link rel="stylesheet" href="./CSS/style.css" >
     <link rel="stylesheet" href="CSS/fonts.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- <link rel="stylesheet" href="CSS/normalize.css"> -->
     <!-- cdjns  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Font Awesome Icons-->
@@ -41,21 +42,26 @@
     <nav class="nav-bar">
         <h1 class="logo">Logo</h1>
         <ul class="nav-elements">
-          <li><a href="#">Marriage</a></li>
-          <li><a href="#">Birthday</a></li>
-          <li><a href="#">Graduation</a></li>
-          <li><a href="#">Meeting</a></li>
-          <li><a href="#">Youth Parties</a></li>
-          <li><a href="#">Packages</a></li>
+          <li class="hover-underline-animation"><a href="#">Home</a></li>
+          <li class="hover-underline-animation"><a href="#">Marriage</a></li>
+          <li class="hover-underline-animation"><a href="#">Birthday</a></li>
+          <li class="hover-underline-animation"><a href="#">Graduation</a></li>
+          <li class="hover-underline-animation"><a href="#">Meeting</a></li>
+          <li class="hover-underline-animation"><a href="#">Youth Parties</a></li>
+          <li class="hover-underline-animation"><a href="#">Packages</a></li>
         </ul>
-        <button class="sign-in"><a href="./login-form/login.html">Sign in</a> </button>
-        <!--------------------------------------------->
-        <!-- <div class="toggle-collapse">
+        <div class="sign-cart">
+            <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+                    <!--------------------------------------------->
+        <div class="toggle-collapse">
           <div class="toggle-icons">
               <i class="fas fa-bars"></i>
           </div>
-        </div> -->
+        </div>
         <!--------------------------------------------->
+          <button class="cart-img"><img src="./imgs/cart.PNG" alt="" class="cart"></button>
+          <button class="sign-in"><a href="./login-form/login.html">Sign in</a> </button>
+        </div>
     </nav>
     <header>
       <section class="hero-section max-width">
@@ -64,7 +70,7 @@
               <h1 class="capitalize">
                 let's make your <br />
                 Life easier with <br />
-                partiana
+                partina
                 <span id="title-icon"><img src="imgs/component/ball.png"></span>
               </h1>
             </div>
@@ -83,12 +89,12 @@
   
     </header>
 
-    <main class="max-width max-width">
+    <main class="max-width">
       <section>
         <div class="about">
           <div class="im"></div>
-          <div class="tex">
-            <div class="text-parg">
+          <div class="txt">
+            
             <h2 class="capitalize">About us</h2>
             <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Amet nostrum quasi ex exercitationem earum iste et
@@ -96,7 +102,7 @@
                 Impedit illum iure reiciendis omnis aspernatur saepe vitae facere accusantium, sit, laudantium nobis aperiam illo
                 nostrum. Rem culpa veniam illum doloribus necessitatibus repellendus
                 nemo, harum suscipit enim debitis fuga itaque aperiam hic. Error corporis at deserunt iure! Totam, ducimus quam.</P>
-            </div>
+            
           </div>
         </div>  
       </section>
@@ -107,46 +113,32 @@
         <h2 class="capitalize">Explore Store</h2> 
           <div id="exp-cont">
             <div class="explore-icons" id="explore-icons">
-              <div class="explore-cate">
                 <img class="icon-img" src="./imgs/component/cake-birthday (1).png">
                 <a class="capitalize" href="#">Cake</a>
-              </div>
             </div>
             <div class="explore-icons" id="explore-icons">
-              <div class="explore-cate">
-                <img class="icon-img" src="./imgs/component/cake-birthday (1).png">
-                <a class="capitalize" href="#">Cake</a>
-              </div>
+                <img class="icon-img" src="./imgs/component/flower (1).png">
+                <a class="capitalize" href="#">Roses</a>
             </div>
             <div class="explore-icons" id="explore-icons">
-              <div class="explore-cate">
-                <img class="icon-img" src="./imgs/component/cake-birthday (1).png">
-                <a class="capitalize" href="#">Cake</a>
-              </div>
+                <img class="icon-img" src="./imgs/component/taxi (1).png">
+                <a class="capitalize" href="#">Car office</a>
             </div>
             <div class="explore-icons" id="explore-icons">
-              <div class="explore-cate">
-                <img class="icon-img" src="./imgs/component/cake-birthday (1).png">
-                <a class="capitalize" href="#">Cake</a>
-              </div>
+                <img class="icon-img" src="./imgs/component/gift (1).png">
+                <a class="capitalize" href="#">gifts</a>
             </div>
             <div class="explore-icons" id="explore-icons">
-              <div class="explore-cate">
-                <img class="icon-img" src="./imgs/component/cake-birthday (1).png">
-                <a class="capitalize" href="#">Cake</a>
-              </div>
+                <img class="icon-img" src="./imgs/component/barber-shop.png">
+                <a class="capitalize" href="#">Hairdresser</a>
             </div>
             <div class="explore-icons" id="explore-icons">
-              <div class="explore-cate">
-                <img class="icon-img" src="./imgs/component/cake-birthday (1).png">
-                <a class="capitalize" href="#">Cake</a>
-              </div>
+                <img class="icon-img" src="./imgs/component/balloons (1).png">
+                <a class="capitalize" href="#">Decoration</a>
             </div>
             <div class="explore-icons" id="explore-icons">
-              <div class="explore-cate">
-                <img class="icon-img" src="./imgs/component/cake-birthday (1).png">
-                <a class="capitalize" href="#">Cake</a>
-              </div>
+                <img class="icon-img" src="./imgs/component/camera (1).png">
+                <a class="capitalize" href="#">Photographer</a>
             </div>
     
           </div>
@@ -159,7 +151,6 @@
 
         <!--Start Package Section-->
         <section class="packge" id="packge">
-          <div>
           <h2 class="capitalize">Packages</h2>
           <div class="cards" id="cards">
             <div class="card1" id="card1">
@@ -203,7 +194,6 @@
 
           </div>
           <h3 class="capitalize"><a href="#"> Show More Packges &gt;</a></h3>
-        </div>
         </section>
         <!--End Package Section-->
 
@@ -234,8 +224,10 @@
             </div>
             <div class="partener-logo">
               <a href="#"><img src="./imgs/mazag.png" alt="" class="parten-logo"></a>
-            </div>
+            </div> 
           </div>
+          <i class="fas fa-chevron-right fa-3x"></i>
+          <i class="fas fa-chevron-left fa-3x"></i>
         </section>
         <!--End Partener Section-->
 
@@ -287,15 +279,15 @@
         </div>
       </div>
       <div class="move-up">
-        <span><i class="fa-solid fa-arrow-up"></i></i></span>
-    </div>
+        <span><i class="fa-solid fa-arrow-up"></i></span>
+      </div>
       <hr>
       <div class="rights">
         <h4>
             <p>Copyright &copy;2022 Partina.co. All rights reserved.
             </p>
         </h4>
-    </div>
+      </div>
 
     </footer>
     <!--End Footer-->
