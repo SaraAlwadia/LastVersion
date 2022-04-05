@@ -137,10 +137,16 @@ form #submit-btn-reg{
 form #submit-btn-reg{
     margin: 4vh auto;
 }
+
+.check-pw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .check{
     display: flex;
     flex-direction: row;
-    margin: 15px auto;
+    margin: 15px 0;
 } 
 
 .check input[type='checkbox']{
@@ -153,6 +159,11 @@ form #submit-btn-reg{
 .check label{
     margin-left: 3px;
     cursor: pointer;
+}
+
+.check-pw a{
+    text-decoration: none;
+    color: var(--main_color);
 }
 h4{
 text-align: center;

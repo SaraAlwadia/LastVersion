@@ -12,9 +12,12 @@ font-size: 62.5%;
 
 body {
 background-color: #ededed;
-width: 90%;
-margin: 0 5%;
 overflow-x: hidden;
+}
+
+.div-margin{
+  width: 90%;
+  margin: 0 5%;
 }
 
 :root{
@@ -71,16 +74,19 @@ h2 {
 } */
 
 /* start Hover underline animation*/
+.active{
+  color: var(--main_color);
+}
 .hover-underline-animation {
   display: inline-block;
   position: relative;
   color: var(--main_color);
 }
 
-.hover-underline-animation:after {
+.hover-underline-animation:after{
   content: '';
   position: absolute;
-  width: 75%;
+  width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: -3.5px;
@@ -210,6 +216,7 @@ nav .toggle-collapse{
   align-items: flex-start;
 }
 .left-side h1 {
+  position: relative;
   font-size: 5.8rem;
   font-family: var(--Roboto-Slab);
   margin-top: -50px;
@@ -482,7 +489,7 @@ nav .toggle-collapse{
 }
 
 .partener .owl-carousel{
-  width: 90%;
+  width: 85%;
   margin: 2vh auto 0;
   height: 1.5vh;
 }
@@ -511,34 +518,78 @@ nav .toggle-collapse{
   outline: none;
 }
 
-.partener .fa-chevron-right {
-  position: absolute;
-  right: 18px;
-  bottom: 177px;
-  color: var(--shadow-color);
-  cursor: pointer;
-}
-
-.partener .fa-chevron-left {
-  position: absolute;
-  left: 18px;
-  bottom: 177px;
-  color: var(--shadow-color);
-  cursor: pointer;
-}
-
-.partener .fa-chevron-right:hover,
-.partener .fa-chevron-left:hover {
-  color: var(--main_color);
-}
 /*End Partener Section*/
 
 /*Start Partenership Request*/
+
+.partenetship-request{
+  height: fit-content;
+  color: var(--white_color);
+  background: var(--btn_color);
+  margin: 1rem 0 7rem;
+  padding: 4rem;
+  text-align: center;
+}
+
+.partenetship-request .partenership-container{
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.partenetship-request h2{
+  color: var(--white_color);
+  padding-bottom: 5rem;
+}
+
+.partenership-container .partenership-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.partenership-container .partenership-btn button{
+  height: 3rem;
+  color: var(--white_color);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.partenetship-request .partenerform-info h3{
+  color: var(--main_color);
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: normal;
+}
+
+.partenetship-request .partenerform-info p{
+  font-size: 1.3rem;
+  line-height: 2;
+  margin-bottom: 2.5rem;
+}
+
+.partenetship-request .fillin-form{
+  width: 37%;
+  height: 4rem;
+  background-color: var(--second_color);
+  border: none;
+  color: var(--white_color);
+  border-radius: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
 /*End Partenership Request*/
 
 /*Start Footer*/
 footer.footer{
-  height: 42vh;
+  height: fit-content;
+  position: relative;
 }
 
 footer.footer .container{
@@ -575,26 +626,27 @@ footer.footer .container .social i{
 .move-up{
   position: absolute;
   right: 0;
+  bottom: 150px;
   font-size: 3rem;
   background: var(--main_color);
   padding: 5px 19px;
   color: var(--white_color);
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
-  bottom: -320vh;
   text-align: center;
   cursor: pointer;
 }
+
 hr{
   font-size: 8px;
   width: 100%;
   color: var(--second_color);
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
 footer.footer .rights {
   color: var(--btn_color);
   text-align: center;
   font-size: 1.2rem;
-  margin:auto;
+  margin:1.2rem auto;
 }
 /*End Footer*/
