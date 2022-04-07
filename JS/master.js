@@ -24,6 +24,7 @@ $(document).ready(function() {
     });
     /*Active class**************************************************** */
 
+    
     $('.owl-carousel').owlCarousel({
         loop: true,
         autoplay: false,
@@ -44,6 +45,10 @@ $(document).ready(function() {
         }
     });
 
+    // disable login button when click on it and go to log in page
+    $("#log-in").onclick(function(){
+        this.hide();
+    });
 
 
     // click to scroll top

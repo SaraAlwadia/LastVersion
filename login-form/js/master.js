@@ -1,17 +1,17 @@
-const responsive = {
-    0: {
-        items: 1
-    },
-    320: {
-        items: 1
-    },
-    560: {
-        items: 2
-    },
-    960: {
-        items: 3
-    }
-}
+// const responsive = {
+//     0: {
+//         items: 1
+//     },
+//     320: {
+//         items: 1
+//     },
+//     560: {
+//         items: 2
+//     },
+//     960: {
+//         items: 3
+//     }
+// }
 
 $(document).ready(function() {
     $nav = $('.nav');
@@ -24,15 +24,15 @@ $(document).ready(function() {
 
     // owl-carousel
     //$('.owl-carousel').owlCarousel();
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 3000,
-        //dots: false,
-        //nav: true,
-        // navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
-        responsive: responsive
-    });
+    // $('.owl-carousel').owlCarousel({
+    //     loop: true,
+    //     autoplay: false,
+    //     autoplayTimeout: 3000,
+    //     //dots: false,
+    //     //nav: true,
+    //     // navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
+    //     responsive: responsive
+    // });
 
 
     // click to scroll top
@@ -62,23 +62,23 @@ $("#first").slideDown("slow");
 
 //*********************************************************************** */
 //Active Class does not work !!!!!!!
-app.plugins.createTab({
-    triggers: '.login-register-form-trigger',
-    elements: '.login-register-form-element',
-    animation: {
-    type: 'slide-in-right'
-},
-onTabChange: function (activeTab) {
-    const firstInput = activeTab.querySelector('input');
+// app.plugins.createTab({
+//     triggers: '.login-register-form-trigger',
+//     elements: '.login-register-form-element',
+//     animation: {
+//     type: 'slide-in-right'
+// },
+// onTabChange: function (activeTab) {
+//     const firstInput = activeTab.querySelector('input');
 
-    firstInput.focus();
-}
-});
+//     firstInput.focus();
+// }
+// });
 
-$(document).ready(function() {
-    $('button').click(function() {
-        $('#sign button.active').removeClass("active");
-        $(this).addClass("active");
-    });
-});
+// $(document).ready(function() {
+//     $('button').click(function() {
+//         $('#sign button.active').removeClass("active");
+//         $(this).addClass("active");
+//     });
+// });
 //*********************************************************************** */
