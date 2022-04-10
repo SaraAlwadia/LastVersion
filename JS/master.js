@@ -1,17 +1,17 @@
-const responsive = {
-    0: {
-        items: 1
-    },
-    320: {
-        items: 1
-    },
-    560: {
-        items: 2
-    },
-    960: {
-        items: 3
-    }
-}
+// const responsive = {
+//     0: {
+//         items: 1
+//     },
+//     320: {
+//         items: 1
+//     },
+//     560: {
+//         items: 2
+//     },
+//     960: {
+//         items: 3
+//     }
+// }
 
 $(document).ready(function() {
     /*Active class**************************************************** */
@@ -31,7 +31,6 @@ $(document).ready(function() {
         autoplayTimeout: 3000,
         //center: true,
         nav: true,
-        // navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
         responsive:{
             0:{
                 items:1
@@ -45,16 +44,14 @@ $(document).ready(function() {
         }
     });
 
-    // disable login button when click on it and go to log in page
-    $("#log-in").onclick(function(){
-        this.hide();
-    });
-
-
     // click to scroll top
-    $('.move-up span').click(function() {
+    $('.move-up').click(function() {
         $('html, body').animate({
             scrollTop: 0
         }, 1000);
     })
+
+    // AOS Instance
+    AOS.init();
+    
 });

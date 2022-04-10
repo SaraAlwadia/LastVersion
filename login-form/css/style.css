@@ -26,7 +26,8 @@ input[type='email'],
 input[type='text'],
 input[type='password'],
 form #submit-btn,
-form #submit-btn-reg{
+form #submit-btn-reg,
+form #submit-btn-partener{
     height: 8vh;
     border-radius: 10px;
     border: 1px solid var(--btn_color);
@@ -45,8 +46,6 @@ form #submit-btn-reg{
     height: 7vh;
 }
 
-/*    margin: -17px 0;
-*/
 input:focus{
     outline: none;
     border-color: var(--main_color);
@@ -54,6 +53,37 @@ input:focus{
 input::placeholder{
     font-size: 15px;
 } 
+
+.icom-img{
+    width: 25px; 
+    margin-right: 10px;
+}
+
+a.back-home{
+    position: absolute;
+    text-decoration: none;
+    left: 135px;
+    top: 30px;
+    color: var(--main_color);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin:  0 0 2rem -6rem;
+    width: fit-content;
+}
+
+a.back-home i{
+    margin-right: 10px;
+    font-size: 1.6rem;
+}
+
+a.back-home h4{
+    color: var(--main_color);
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
 section #first .form{
     height: 90vh;
 }
@@ -62,14 +92,29 @@ section #second .form{
     height: 95vh;
 } 
 
-section.form{
+main.form{
+    position: relative;
     margin: 30px auto;
-    width: 60%;
+    width: 80%;
     font-family: var(--Roborto);
-    padding: 5vh 10vw;
+    padding: 5vh 5vw;
     background: var(--white_color);
     border-radius: 10px;
-    box-shadow: 1px 1px 2px var(--shadow-color);
+    box-shadow: 0px 0px 8px var(--shadow-color);
+}
+
+main section.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.customer-login{
+    width: 45%;
+}
+
+section.partener-login{
+    width: 42%;
 }
 
 section .sign{
@@ -77,7 +122,7 @@ section .sign{
     flex-direction: row;
     justify-content: space-between;
 }
-section.form h1{
+main.form h1{
     margin: 0px auto 25px;
     font-size: 2.4rem;
     text-align: center;
@@ -124,7 +169,8 @@ margin-top: 2vh;
 }
 
 form #submit-btn,
-form #submit-btn-reg{
+form #submit-btn-reg,
+form #submit-btn-partener{
     background: var(--main_color);
     color: var(--white_color);
     height: 7vh;
@@ -180,12 +226,32 @@ color: var(--btn_color);
 }
 .soc-login button{
     width: calc(97%/2);
-    height: 6vh;
+    height: 7vh;
     border-radius: 10px;
     border: 1px solid var(--btn_color);
     background: var(--white_color);
     font-size: 1.2rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px auto;
+}
+
+section.partener-login h2{
+    color: var(--second_color);
+    font-size: 1.3rem;
+    margin: 7px 0;
+}
+
+section.partener-login .lbl{
+    top: 15px;
+}
+
+.partener-login input[type='email'],
+.partener-login input[type='password']{
+    margin: 5px 0;
 }
 
 

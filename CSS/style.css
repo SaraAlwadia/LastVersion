@@ -129,18 +129,38 @@ h2 {
 }
 
 .sign-cart button.cart-img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: none;
-  padding: auto;
+  padding: 2px auto;
   background: var(--white_color);
   border-radius: 10px;
   margin-right: 2rem;
+  padding: 5px auto;
   height: 4rem;
   width: 4rem;
   cursor: pointer;
 }
 
+.sign-cart button.cart-img:hover .cart{
+  display: none;
+}
+
+.sign-cart button.cart-img:hover .cart-bg{
+  display: flex;
+  margin: auto;
+}
+
 .cart{
   width: 2rem;
+  transition: all ease-in-out .3s;
+}
+
+.cart-bg{
+  display: none;
+  width: 2.2rem;
+  transition: all ease-in-out .3s;
 }
 
 nav .toggle-collapse{
@@ -394,7 +414,7 @@ nav .toggle-collapse{
 
 /*Start Package Section*/
 #packge{
-  height: 100vh;
+  height: 120vh;
   text-align: center;
 }
 
@@ -407,7 +427,7 @@ nav .toggle-collapse{
 
 #card1{
   width:  calc(100%/2 - 3vw);
-  height: 70vh;
+  height: 450px;
   background-color: var(--white_color);
   border-radius: 15px;
   padding: 1rem;
@@ -416,9 +436,51 @@ nav .toggle-collapse{
 }
 
 #box-card{
+  position: relative;
   width: 100%;
   height: 100%;
   padding: 10px; 
+}
+
+.add-cart{
+  position: absolute;
+  background: var(--white_color);
+  border: none;
+  outline: none;
+  margin: 10px;
+  border-radius: 7px;
+  padding: 5px;
+  box-shadow: 0 0 6px var(--shadow-color);
+  cursor: pointer;
+  right: 10px;
+  transition: all ease-in-out .3s;
+}
+
+.add-cart .active-add{
+  display: none;
+}
+
+.add-cart img.no-hov {
+  width: 23px;
+  transition: all ease-in-out .3s;
+}
+
+.add-cart img.hov{
+  width: 25px;
+  margin-right: 5px;
+  transition: all ease-in-out .3s;
+}
+
+.add-cart:hover img.no-hov{
+  display: none;
+}
+
+.add-cart:hover .active-add{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--second_color);
+  font-size: 1.4rem;
 }
 
 #imges{
@@ -443,12 +505,14 @@ nav .toggle-collapse{
   display: flex;
   justify-content: space-between;
 }
+
 #card1 .btn{
   display: flex;
   position: relative;
   width: 50%;
   justify-content: space-between;
 }
+
 #card1 .btn button{
   width: 20rem;
   height: 4rem;

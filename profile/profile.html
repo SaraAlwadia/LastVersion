@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Profile</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <a href="../index.html" class="back-home">
+                <i class="fa-solid fa-arrow-left-long"></i>
+                <h4>Back to Home</h4>
+            </a>    
+            <div class="left">
+                <div class="color-bg"></div>
+                <div class="profile-img">
+                    <img src="../imgs/mazag.png" alt="">
+                    <h1 class="profile-name capitalize">Sara Sara</h1>
+                    <button class="edit-profile capitalize">edit profile</button>
+                    <a href="#" class="sign-out">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <h2 class="signout capitalize">sign out</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <h1 class="header">Personal Information</h1>
+                <form action="" method="post">
+                    <div class="full-name">
+                        <div class="name">
+                            <label for="fname" class="capitalize">first name</label>
+                            <input id="fname" type="text" value="Sara">
+                        </div>
+                        <div class="name">
+                            <label for="mname" class="capitalize">mid name</label>
+                            <input id="mname" type="text" value="Mohammed">
+                        </div>
+                        <div class="name">
+                            <label for="lname" class="capitalize">last name</label>
+                            <input id="lname" type="text" value="Alwadia">
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact">
+                            <label for="phone-nom" class="capitalize">phone number</label>
+                            <input id="phone-nom" type="tel" value="+970000000000">
+                        </div>
+                        <div class="contact">
+                            <label for="email" class="capitalize">e-mail</label>
+                            <input id="email" type="email" value="example@gmail.com">
+                        </div>
+                        <div class="contact">
+                            <label for="address" class="capitalize">phone number</label>
+                            <input id="adders" type="text" value="Gaza, Street">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="edit-account">
+                <div class="right">
+                    <h1 class="header">Account Settings</h1>
+                    <form action="" method="post">
+                        <div class="full-name">
+                            <div class="name">
+                                <label for="fname" class="capitalize">first name</label>
+                                <input id="fname" type="text" placeholder="First Name">
+                            </div>
+                            <div class="name">
+                                <label for="mname" class="capitalize">mid name</label>
+                                <input id="mname" type="text" placeholder="Mid Name">
+                            </div>
+                            <div class="name">
+                                <label for="lname" class="capitalize">last name</label>
+                                <input id="lname" type="text" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact">
+                                <label for="phone-nom" class="capitalize">phone number</label>
+                                <input id="phone-nom" type="tel" placeholder="+970000000000">
+                            </div>
+                            <div class="contact">
+                                <label for="email" class="capitalize">e-mail</label>
+                                <input id="email" type="email" placeholder="example@gmail.com">
+                            </div>
+                            <div class="contact">
+                                <label for="address" class="capitalize">phone number</label>
+                                <input id="adders" type="text" placeholder="City, Street">
+                            </div>
+                        </div>
+                        <button type="submit" id="save-changes" class="capitalize">save changes</button>
+                    </form>
+                </div>
+        
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
