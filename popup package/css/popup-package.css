@@ -20,7 +20,8 @@ main {
     display: none;
     z-index: 10000;
     position: absolute;
-    bottom: 960px;
+    bottom: 870px;
+    left: 180px;
 }
 
 .package-gallery {
@@ -28,7 +29,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    width: 900px;
     margin: 2rem auto;
     padding: 35px;
     background: var(--white_color);
@@ -62,7 +63,7 @@ main {
 .package-gallery .left {
     display: flex;
     /* flex-direction: column;
-    justify-content: space-between; */
+justify-content: space-between; */
     width: 65%;
     padding: 15px;
 }
@@ -70,25 +71,25 @@ main {
 
 /*
 .package-gallery .left .thumbnails {
-    width: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    justify-content: center;
+width: 10%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+justify-content: center;
 }
 
 .thumbnail {
-    width: 100%;
-    height: 100%;
-    list-style: none;
-    margin: auto;
-    cursor: pointer;
-    opacity: 0.3;
+width: 100%;
+height: 100%;
+list-style: none;
+margin: auto;
+cursor: pointer;
+opacity: 0.3;
 }
 
 .thumbnail img {
-    width: 5rem;
-    height: 5rem;
+width: 5rem;
+height: 5rem;
 }
 */
 
@@ -100,7 +101,7 @@ main {
 
 
 /* .thumbnail.is-active {
-    opacity: 1;
+opacity: 1;
 } */
 
 .package-gallery .splide {
@@ -110,9 +111,9 @@ main {
 
 
 /* .package-gallery .left {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
+display: flex;
+flex-direction: row;
+justify-content: space-around; 
 }*/
 
 .package-gallery .right {
@@ -231,26 +232,106 @@ main {
 }
 
 
-/* Add animation (fade in the popup) */
+/*End popup Package Section*/
 
 
-/* @-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
+/******************Responsive*******************/
+
+@media only screen and (min-width: 991px) and (max-width: 1024px) {
+    .package-gallery {
+        width: 950px;
     }
-    to {
-        opacity: 1;
+    .package-gallery .left {
+        width: 55%;
+        padding: 0;
+    }
+    .package-gallery .right {
+        width: 40%;
     }
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+@media only screen and (min-width: 665px) and (max-width: 991px) {
+    .package-gallery {
+        width: 600px;
+        flex-direction: column;
+        padding: 20px;
     }
-    to {
-        opacity: 1;
+    .package-gallery .left {
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0;
     }
-} */
+    .package-gallery .right {
+        width: 100%;
+        margin-top: 70px;
+    }
+    .package-gallery .right .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .package-gallery .right .info .up-sec {
+        justify-content: flex-start;
+    }
+    .package-gallery .right .info .down-sec {
+        width: 50%;
+    }
+}
 
+@media only screen and (min-width: 300px) and (max-width: 665px) {
+    .package-gallery {
+        width: 95%;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .package-gallery .left {
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0;
+    }
+    .package-gallery .right {
+        width: 100%;
+        margin-top: 70px;
+    }
+    .package-gallery .right .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .package-gallery .right .info .up-sec {
+        justify-content: flex-start;
+        width: 90%;
+    }
+    .package-gallery .right .info .down-sec {
+        width: 90%;
+    }
+}
 
-/*End popup Package Section*/
+@media only screen and (max-width: 300px) {
+    .package-gallery {
+        width: 98%;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .package-gallery .left {
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0;
+    }
+    .package-gallery .right {
+        width: 100%;
+        margin-top: 70px;
+    }
+    .package-gallery .right .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .package-gallery .right .info .up-sec {
+        justify-content: flex-start;
+        width: 98%;
+    }
+    .package-gallery .right .info .down-sec {
+        width: 98%;
+    }
+}

@@ -63,10 +63,18 @@ $("#signin").click(function() {
 //*********************************************************************** */
 //Active Class does not work !!!!!!!
 
-$(document).ready(function() {
-    $('button').click(function() {
-        $('#sign button').removeClass(".active");
-        $(this).addClass(".active");
-    });
+
+// $('button').click(function() {
+//     $(button.active).removeClass(".active");
+//     $(this).addClass(".active");
+// });
+
+
+$("#sign").on('click', 'button', function() {
+
+    // remove classname 'active' from all li who already has classname 'active'
+    $("#sign button.active").removeClass("active");
+    // adding classname 'active' to current click li 
+    $(this).addClass("active");
 });
 //*********************************************************************** */
