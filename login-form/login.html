@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="../CSS/style.css"> -->
+    <!-- <link rel="stylesheet" href="../CSS/nav.css"> -->
     <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +22,21 @@
 
     <title>Partina | Login</title>
 </head>
+
 <body>
+    <nav class="nav-bar div-margin">
+        <h1 class="logo">Logo</h1>
+
+        <div class="sign-cart">
+            <div class="toggle-collapse">
+                <!-- <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div> -->
+            </div>
+            <button class="cart-img"><a href="../cart/cart.html"><img src="../imgs/cart.PNG" alt="" class="cart"><img src="../imgs/card-bg.png" alt="" class="cart-bg"></a></button>
+        </div>
+    </nav>
+
     <main action="" method="get" class="form main-container">
         <a href="../index.html" class="back-home">
             <i class="fa-solid fa-arrow-left-long"></i>
@@ -27,84 +46,85 @@
         <section class="container">
             <section class="customer-login">
                 <div class="sign" id="sign">
-                    <button type="button" class="active" id="signin" onclick="signin()">Sign in</button>
-                    <button type="button" id="signup" onclick="signup()">Sign up</button>    
+                    <button type="button" id="signin" onclick="signin()">Sign in</button>
+                    <button type="button" id="signup" onclick="signup()">Sign up</button>
                 </div>
-    
+
                 <!--Start Sign in-->
                 <div id="first">
-                <form action="" method="" id="signin">
-                    <div class="inpts">
-                        <div class="user">
-                            <label for="user" class="lbl">E-mail</label>
-                            <input type="email" name="user" id="user" placeholder="example@gmail.com" required>
-                            <img src="">
-                        </div>
-                        <div class="pw">
-                            <label for="pw" class="lbl">Password</label>
-                            <input type="password" name="pw" id="pw" placeholder="***************" required>
-                            <img src="">
-                        </div>
-                        <button type="submit" id="submit-btn">Log in</button>
-                        <div class="check-pw">
-                            <div class="check">
-                                <input type="checkbox" id="check">
-                                <label for="check">Remember me</label>
-                            </div>
-                            <a href="#">Forget Password?</a>
-                        </div>
-                        <h4>Or log in with</h4>
-                        <div class="soc-login">
-                            <button><img src="../imgs/component/facebook.png" alt="" class="icom-img"><span>Facebook</span></button>
-                            <button><img src="../imgs/component/google.png" alt="" class="icom-img"><span>Google</span></button>
-                        </div>
-                    </div>
-                </form>
-                </div>
-                <!--End Sign in-->
-        
-                <!--Start Sign up -->
-                <div id="second">
-                <form action="" method="" id="signup">
-                    <div class="inpts">
-                        <div class="input-container">
+                    <form action="" method="" id="signin-form">
+                        <div class="inpts">
                             <div class="user">
-                                <label for="username" class="lbl">Username</label>
-                                <input type="text" name="username" id="username" placeholder="Username" required>
-                                <img src="">
-                            </div>
-            
-                            <div class="user">
-                                <label for="user-reg" class="lbl">E-mail</label>
-                                <input type="email" name="user" id="user-reg" placeholder="example@gmail.com" required>
-                                <img src="">
+                                <label for="user" class="lbl">E-mail</label>
+                                <input type="email" name="user" id="user" placeholder="example@gmail.com" required>
+                                <!-- <img src=""> -->
                             </div>
                             <div class="pw">
-                                <label for="pw-reg" class="lbl">Password</label>
-                                <input type="password" name="pw" id="pw-reg" placeholder="***************" required>
-                                <img src="">
+                                <label for="pw" class="lbl">Password</label>
+                                <input type="password" name="pw" id="pw" placeholder="***************" required>
+                                <!-- <img src=""> -->
                             </div>
-            
+                            <button type="submit" id="submit-btn">Log in</button>
+                            <div class="check-pw">
+                                <div class="check">
+                                    <input type="checkbox" id="check">
+                                    <label for="check">Remember me</label>
+                                </div>
+                                <a href="#">Forget Password?</a>
+                            </div>
+                            <h4>Or log in with</h4>
+                            <div class="soc-login">
+                                <button><img src="../imgs/component/facebook.png" alt="" class="icom-img"><span>Facebook</span></button>
+                                <button><img src="../imgs/component/google.png" alt="" class="icom-img"><span>Google</span></button>
+                            </div>
                         </div>
-                        <div class="check">
-                            <input type="checkbox" id="check-privecy-partener" required> <!--dont have css add it-->
-                            <label for="check-privecy">Accept <a href="#" target="_blank">privecy policy</a> </label>
+                    </form>
+                </div>
+                <!--End Sign in-->
+
+                <!--Start Sign up -->
+                <div id="second">
+                    <form action="" method="" id="signup-form">
+                        <div class="inpts">
+                            <div class="input-container">
+                                <div class="user">
+                                    <label for="username" class="lbl">Username</label>
+                                    <input type="text" name="username" id="username" placeholder="Username" required>
+                                    <!-- <img src=""> -->
+                                </div>
+
+                                <div class="user">
+                                    <label for="user-reg" class="lbl">E-mail</label>
+                                    <input type="email" name="user" id="user-reg" placeholder="example@gmail.com" required>
+                                    <!-- <img src=""> -->
+                                </div>
+                                <div class="pw">
+                                    <label for="pw-reg" class="lbl">Password</label>
+                                    <input type="password" name="pw" id="pw-reg" placeholder="***************" required>
+                                    <!-- <img src=""> -->
+                                </div>
+
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" id="check-privecy" required>
+                                <!--dont have css add it-->
+                                <label for="check-privecy">Accept <a href="#" target="_blank">privecy policy</a> </label>
+                            </div>
+
+                            <button type="submit" id="submit-btn-reg">Sign up</button>
+
+                            <h4>Or Sign up with</h4>
+                            <div class="soc-login">
+                                <button><img src="../imgs/component/facebook.png" alt="" class="icom-img"><span>Facebook</span></button>
+                                <button><span><img src="../imgs/component/google.png" alt="" class="icom-img"></span>Google</button>
+                            </div>
+
                         </div>
-        
-                        <button type="submit" id="submit-btn-reg">Sign up</button>
-        
-                        <h4>Or Sign up with</h4>
-                        <div class="soc-login">
-                            <button><img src="../imgs/component/facebook.png" alt="" class="icom-img"><span>Facebook</span></button>
-                            <button><span><img src="../imgs/component/google.png" alt="" class="icom-img"></span>Google</button>
-                        </div>
-            
-                    </div>
-            
-                </form>
+
+                    </form>
                 </div>
                 <!--End Sign up-->
-        
+
             </section>
             <!--Start partenership login-->
             <section class="partener-login">
@@ -114,12 +134,12 @@
                         <div class="user">
                             <label for="user-partener" class="lbl">E-mail</label>
                             <input type="email" name="user" id="user-partener" placeholder="example@gmail.com" required>
-                            <img src="">
+                            <!-- <img src=""> -->
                         </div>
                         <div class="pw">
                             <label for="pw-partener" class="lbl">Password</label>
                             <input type="password" name="pw" id="pw-partener" placeholder="***************" required>
-                            <img src="">
+                            <!-- <img src=""> -->
                         </div>
                         <button type="submit" id="submit-btn-partener">Log in</button>
                         <div class="check-pw">
@@ -128,16 +148,69 @@
                                 <label for="check-partener">Remember me</label>
                             </div>
                             <a href="#">Forget Password?</a>
-                        </div>    
+                        </div>
                     </div>
-            
+
                 </form>
-        
+
             </section>
         </section>
         <!--End partenership login-->
-    
+
     </main>
+    <footer class="footer">
+        <div class="div-margin-footer">
+            <div class="events footer-links">
+                <h3 class="capitalize ">Events</h3>
+                <ul class="events-list ">
+                    <li><a href="# ">Wedding Hole</a></li>
+                    <li><a href="# ">Restaurant</a></li>
+                    <li><a href="# ">Hotels</a></li>
+                    <li><a href="# ">Chalets</a></li>
+                    <li><a href="# ">Packages</a></li>
+                </ul>
+            </div>
+            <div class="shops footer-links">
+                <h3 class="capitalize ">shops</h3>
+                <ul class="shops-list ">
+                    <li><a href="# ">Cake</a></li>
+                    <li><a href="# ">Roses</a></li>
+                    <li><a href="# ">Car office</a></li>
+                    <li><a href="# ">Gifts</a></li>
+                    <li><a href="# ">Hairdresser</a></li>
+                    <li><a href="# ">Decoration</a></li>
+                    <li><a href="# ">Youth parties</a></li>
+                </ul>
+            </div>
+            <div class="support footer-links">
+                <h3 class="capitalize ">Support</h3>
+                <ul class="support-list ">
+                    <li><a href="# ">About us</a></li>
+                    <li><a href="# ">Contact us</a></li>
+                    <li><a href="# ">Help</a></li>
+                </ul>
+            </div>
+            <div class="follow-us footer-links">
+                <h3 class="capitalize ">follow us</h3>
+                <div class="social">
+                    <a href="# " target="_blank "><i class="fab fa-instagram "></i></a>
+                    <a href="# " target="_blank "><i class=" fab fa-facebook-f "></i></a>
+                    <a href="# " target="_blank "><i class=" fab fa-twitter "></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="move-up">
+            <span><i class="fa-solid fa-arrow-up "></i></span>
+        </div>
+        <hr>
+        <div class="rights">
+            <h4>
+                <p>Copyright &copy;2022 Partina.co. All rights reserved.
+                </p>
+            </h4>
+        </div>
+
+    </footer>
 
 </body>
 <script src="./js/jquery3.4.1.min.js"></script>
@@ -145,5 +218,7 @@
 
 <!--Custom JQuery File-->
 <script src="./js/master.js"></script>
+<script src="../JS/jquery3.4.1.min.js"></script>
+<script src="../JS/move-up.js"></script>
 
 </html>

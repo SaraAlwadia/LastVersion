@@ -1,0 +1,256 @@
+@import url('../CSS/fonts.css');
+@import url('../CSS/style.css');
+:root {
+    /*Theme Color*/
+    --main_color: #ff8d8d;
+    --second_color: #272c32;
+    --btn_color: #3f4551;
+    --white_color: #FFF;
+    --shadow-color: #757575;
+    /*Theme font-family*/
+    --Roborto: 'Roboto', 'sans-serif';
+    --Roboto-Slab: 'Roboto-Slab', 'sans-serif';
+}
+
+main {
+    position: relative;
+}
+
+.package-pop {
+    display: none;
+    z-index: 10000;
+    position: absolute;
+    bottom: 960px;
+}
+
+.package-gallery {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 35px;
+    background: var(--white_color);
+    box-shadow: 0 0 7px var(--shadow-color);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.package-gallery .exit {
+    position: absolute;
+    background: var(--white_color);
+    outline: none;
+    border: none;
+    right: 25px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.package-gallery .exit:hover i {
+    color: red;
+}
+
+.package-gallery .exit i {
+    color: var(--main_color);
+    font-size: 1.3rem;
+}
+
+.package-gallery .left {
+    display: flex;
+    /* flex-direction: column;
+    justify-content: space-between; */
+    width: 65%;
+    padding: 15px;
+}
+
+
+/*
+.package-gallery .left .thumbnails {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.thumbnail img {
+    width: 5rem;
+    height: 5rem;
+}
+*/
+
+.package-gallery .splide__list {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+/* .thumbnail.is-active {
+    opacity: 1;
+} */
+
+.package-gallery .splide {
+    width: 95%;
+    height: 70vh;
+}
+
+
+/* .package-gallery .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}*/
+
+.package-gallery .right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.package-gallery .right .up-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.package-gallery .right .up-sec h2 {
+    font-size: 1.2rem;
+    color: var(--second_color);
+    margin-bottom: 1rem;
+}
+
+.package-gallery .right .up-sec ul {
+    font-size: 1rem;
+    color: var(--btn_color);
+    line-height: 1.3;
+}
+
+.package-gallery .right .up-sec ul li {
+    list-style-type: circle;
+    margin-left: 1rem;
+}
+
+.package-gallery .right .down-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.package-gallery .right .down-sec h3 {
+    color: var(--second_color);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.package-gallery .right .down-sec .book-time {
+    color: var(--btn_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.package-gallery .right .down-sec .book-time label {
+    font-size: .8rem;
+    margin-bottom: .7rem;
+    color: var(--main_color);
+}
+
+.package-gallery .right .down-sec .book-time label span {
+    color: var(--shadow-color);
+    font-size: .7rem;
+}
+
+.package-gallery .right .down-sec .book-time input {
+    border: 1px solid var(--shadow-color);
+    height: 2rem;
+    padding: 5px;
+    outline: none;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.package-gallery .right .down-sec .book-time input:focus {
+    border: 1px solid var(--main_color);
+}
+
+.package-gallery .right .down-sec .btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.package-gallery .right .down-sec .btns #pric,
+.package-gallery .right .down-sec .btns .book {
+    font-size: .8rem;
+    padding: 10px 15px;
+    color: var(--white_color);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.package-gallery .right .down-sec .btns #pric {
+    background: var(--btn_color);
+    width: 24%;
+    border: 2px solid var(--btn_color);
+}
+
+.package-gallery .right .down-sec .btns .book {
+    width: 74%;
+    outline: none;
+    background: var(--main_color);
+    border: 1px solid var(--main_color);
+}
+
+.package-gallery .right .down-sec .btns .book a {
+    color: var(--white_color);
+}
+
+
+/* Add animation (fade in the popup) */
+
+
+/* @-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */
+
+
+/*End popup Package Section*/

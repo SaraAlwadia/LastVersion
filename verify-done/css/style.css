@@ -1,0 +1,34 @@
+    @import url('../CSS/fonts.css');
+    @import url(../../verfication/css/style.css);
+     :root {
+        /*Theme Color*/
+        --main_color: #ff8d8d;
+        --second_color: #272c32;
+        --btn_color: #3f4551;
+        --white_color: #FFF;
+        --shadow-color: #757575;
+    }
+    
+    img.done {
+        margin: 5rem 0;
+    }
+    
+    p {
+        color: #4BB543;
+    }
+    
+    .cont .container button.btn {
+        width: 60%;
+        background: var(--main_color);
+        font-size: 1.5rem;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+    }
+    
+    .container button.btn a {
+        text-decoration: none;
+        color: var(--white_color);
+    }

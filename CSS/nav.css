@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--Roborto);
+}
+
+body {
+    background-color: #ededed;
+    overflow-x: hidden;
+}
+
+:root {
+    /*Theme Color*/
+    --main_color: #ff8d8d;
+    --second_color: #272c32;
+    --btn_color: #3f4551;
+    --white_color: #FFF;
+    --shadow-color: #757575;
+    /*Theme font-family*/
+    --Roborto: 'Roboto', 'sans-serif';
+    --Roboto-Slab: 'Roboto-Slab', 'sans-serif';
+}
+
+.div-margin {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:hover {
+    color: var(--main_color);
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3.5px;
+    border-radius: 10px;
+    left: 0px;
+    background-color: var(--main_color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    -webkit-transition: transform 0.25s ease-out;
+    -moz-transition: transform 0.25s ease-out;
+    -ms-transition: transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 7rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: medium;
+    padding: 0 .8rem;
+    color: var(--second_color);
+}
+
+.nav-bar {
+    background: #0A1420;
+}
+
+h1.logo {
+    color: var(--white_color);
+}
+
+.nav-bar ul a {
+    color: #fff;
+}
+
+.nav-bar {
+    padding: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-elements {
+    display: flex;
+}
+
+.nav-elements li {
+    padding: 0 .8rem;
+}
+
+.nav-elements a {
+    padding: 0;
+}
+
+.sign-cart {
+    display: flex;
+    margin-left: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-cart button.cart-img {
+    border: none;
+    background: var(--white_color);
+    border-radius: 10px;
+    margin-right: .7rem;
+    /* padding: 0px 0; */
+    height: 2.4rem;
+    width: 2.4rem;
+    cursor: pointer;
+}
+
+.sign-cart button.cart-img:hover .cart {
+    display: none;
+}
+
+.sign-cart button.cart-img:hover .cart-bg {
+    display: flex;
+}
+
+.cart {
+    display: flex;
+    width: 1.2rem;
+    margin: -9px auto;
+}
+
+.cart-bg {
+    display: none;
+    margin: -9px auto;
+    width: 1.2rem;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+nav .toggle-collapse {
+    display: none;
+    font-size: .7rem;
+    color: var(--second_color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 65rem) {
+    .nav-elements {
+        display: none;
+    }
+    .sign-cart i.fa-bars {
+        font-size: 1.2rem;
+        color: var(--main_color);
+        margin-right: .7rem;
+    }
+    nav .toggle-collapse {
+        display: flex;
+    }
+}
+
+.sign-in {
+    background-color: var(--btn_color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.sign-in:hover {
+    box-shadow: 0px 0px 7px 1px var(--shadow-color);
+}
+
+.sign-in a {
+    color: var(--white_color);
+    padding: .7rem;
+    font-size: .73rem;
+}
+
+
+/********************************/
+
+.nav .toggle-collapse {
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    color: var(--main_color);
+}
+
+
+/********************************/
+
+
+/***********************Responsive**************************/
+
+@media only screen and (min-width: 991px) and (max-width: 1024px) {
+    .div-margin {
+        width: 995px;
+    }
+}
+
+@media only screen and (min-width: 665px) and (max-width: 991px) {
+    .div-margin {
+        width: 655px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 665px) {
+    .div-margin {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .div-margin {
+        width: 99%;
+    }
+}
+
+
+/*End Navigation Section*/

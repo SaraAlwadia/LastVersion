@@ -1,21 +1,12 @@
 @import url('../CSS/fonts.css');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--Roborto);
 }
 
-body{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 5%, rgba(241,241,241,1) 17%);
-    width: 92%;
-    margin: 0 4%;
-}
-
-
-:root{
+:root {
     /*Theme Color*/
     --main_color: #ff8d8d;
     --second_color: #272c32;
@@ -26,38 +17,58 @@ body{
     --Roboto-Slab: 'Roboto-Slab', 'sans-serif';
 }
 
-.capitalize{
+.capitalize {
     text-transform: capitalize;
 }
 
-h2{
+h2 {
     color: var(--main_color);
     font-size: 1.2rem;
-    margin: 0 0 1.8rem ;
+    margin: 0 0 1.8rem;
 }
 
-h3{
+h3 {
     color: var(--second_color);
     font-size: 1.2rem;
     margin: 1.5rem 0;
 }
 
-input{
+input {
     margin-right: 5px;
 }
 
-input[type='checkbox']{
+input[type='checkbox'] {
     position: absolute;
     opacity: 0;
     height: 0;
     width: 0;
 }
 
-label{
+label {
     cursor: pointer;
 }
 
-.check-mark{
+.container {
+    width: 92%;
+    margin: 0 4%;
+}
+
+.header {
+    text-align: center;
+    font-size: 1.3rem;
+    background: #0A1420;
+    /* margin-bottom: 1.2rem; */
+    padding: 3rem 0 0;
+}
+
+.bg {
+    margin: 0;
+    height: 8rem;
+    background: rgb(10, 20, 32);
+    background: linear-gradient(180deg, rgba(10, 20, 32, 1) 16%, rgba(10, 20, 32, 0.964023) 43%, rgba(255, 255, 255, .56666) 96%);
+}
+
+.check-mark {
     position: absolute;
     top: -1px;
     left: -25px;
@@ -68,15 +79,14 @@ label{
     cursor: pointer;
 }
 
-.check-box:hover input[type='checkbox'] ~ .check-mark {
+.check-box:hover input[type='checkbox']~.check-mark {
     background-color: var(--shadow-color);
 }
 
-.check-box input:checked ~ .check-mark  {
-    background: var(--main_color) ;
+.check-box input:checked~.check-mark {
+    background: var(--main_color);
     border: none;
 }
-
 
 .check-mark:after {
     content: "";
@@ -84,8 +94,10 @@ label{
     display: none;
 }
 
-  /* Show the checkmark when checked */
-input[type='checkbox']:checked ~ .check-mark:after {
+
+/* Show the checkmark when checked */
+
+input[type='checkbox']:checked~.check-mark:after {
     display: block;
 }
 
@@ -102,29 +114,28 @@ input[type='checkbox']:checked ~ .check-mark:after {
     transform: rotate(45deg);
 }
 
-section.nav{
+section.nav {
     height: 20vh;
 }
 
-main h1.head-title{
+main h1.head-title {
     font-size: 1.3rem;
     text-align: center;
     font-family: var(--Roboto-Slab);
     color: var(--white_color);
 }
 
-main h1.head-title span{
+main h1.head-title span {
     color: var(--main_color);
     font-family: var(--Roboto-Slab);
 }
 
-.filter-container{
-    width: 50%;
-    margin: 0 auto;
+.filter-container {
+    width: 791px;
+    margin: -120px auto 0;
 }
 
-
-.container{
+.container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -135,16 +146,15 @@ main h1.head-title span{
     box-shadow: 0 0 20px #bababa;
     border-left: 15px solid var(--main_color);
     border-right: 10px solid var(--white_color);
-
 }
 
-.event-type{
+.event-type {
     box-shadow: 0 0 20px #bababa;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
 
-.check-box{
+.check-box {
     position: relative;
     display: flex;
     justify-content: start;
@@ -154,7 +164,7 @@ main h1.head-title span{
     cursor: pointer;
 }
 
-input[type='text']{
+input[type='text'] {
     margin-left: 10px;
     border-top: none;
     border-left: none;
@@ -163,78 +173,79 @@ input[type='text']{
     width: 100%;
 }
 
-.fill-info{
+.fill-info {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.fill-info .booking{
+.fill-info .booking {
     display: flex;
     flex-direction: row;
 }
 
-.fill-info .bookingdt{
+.fill-info .bookingdt {
     display: flex;
     justify-content: space-between;
 }
 
 input[type='date'],
-input[type='time']{
+input[type='time'] {
     margin: 10px 0;
     width: 90%;
     height: 2rem;
 }
 
-.fill-info .booking label{
+.fill-info .booking label {
     color: var(--main_color);
     font-size: .9rem;
 }
 
-.fill-info .booking label span{
+.fill-info .booking label span {
     color: var(--shadow-color);
     font-size: .9rem;
 }
 
 input[type='date'],
-input[type='time']{
+input[type='time'] {
     outline: none;
     padding: 2px;
     cursor: text;
-border-width: 1px;
+    border-width: 1px;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator,
-input[type="time"]::-webkit-calendar-picker-indicator{
+input[type="time"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
 }
 
-input[type="date"]::webkit-calendor-datepicker{
+input[type="date"]::webkit-calendor-datepicker {
     background: #ff8d8d;
 }
 
 input[type='date']:focus,
-input[type='time']:focus{
+input[type='time']:focus {
     border: 1px solid var(--main_color);
     outline: none;
 }
 
-.transportion{
+.transportion {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: var(--second_color);
 }
 
-.transportion label{
+.transportion label {
     font-size: .9rem;
 }
-.cars{
+
+.cars {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.transport-count{
+.transport-count {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -243,52 +254,50 @@ input[type='time']:focus{
     opacity: .5; */
 }
 
-
 .transport-count input[type='number'],
-.transport-count select{
+.transport-count select {
     height: 1.5rem;
     padding: 3px;
     outline: none;
     border-width: 1px;
 }
 
-.transport-count input[type='number']{
+.transport-count input[type='number'] {
     width: 3rem;
     margin-left: .5rem;
 }
 
-.transport-count select{
+.transport-count select {
     width: 7rem;
     cursor: pointer;
 }
 
 .transport-count input[type='number']:focus,
-.transport-count select:focus{
+.transport-count select:focus {
     border: 1px solid var(--main_color);
     outline: none;
 }
 
-#search-btn{
+#search-btn {
     height: 3.2rem;
     width: 7.7rem;
-
     background: var(--main_color);
     cursor: pointer;
     outline: none;
     border: none;
     border-radius: 10px;
-    margin-bottom:  3rem;
+    margin: 6rem 0;
     box-shadow: 0 0 8px var(--shadow-color);
     transition: all ease-in .2s;
 }
 
-#search-btn{
+#search-btn {
     text-decoration: none;
     font-size: 1.2rem;
     color: var(--white_color);
 }
 
-#search-btn:hover{
+#search-btn:hover {
     background: transparent;
     border: 1px solid var(--main_color);
 }
@@ -297,7 +306,76 @@ input[type='time']:focus{
     color: var(--main_color);
 }
 
-/* .check-box input:checked ~ .transport-count{
-    pointer-events: auto;
-    opacity: 0;
-} */
+
+/**************************Responsive**************************/
+
+@media only screen and (min-width: 991px) and (max-width: 1024px) {
+    .filter-container {
+        width: 791px;
+    }
+}
+
+@media only screen and (min-width: 665px) and (max-width: 991px) {
+    .filter-container {
+        width: 600px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 665px) {
+    .filter-container {
+        width: 95%;
+    }
+    .fill-info .booking {
+        display: flex;
+        flex-direction: column;
+    }
+    .fill-info .bookingdt {
+        display: flex;
+        flex-direction: column;
+    }
+    .transportion {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .transport-count {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    * {
+        font-size: 97%;
+    }
+    .filter-container {
+        width: 92%;
+        margin: -120px auto 0;
+    }
+    .fill-info .booking {
+        display: flex;
+        flex-direction: column;
+    }
+    .fill-info .bookingdt {
+        display: flex;
+        flex-direction: column;
+    }
+    .transportion {
+        margin-bottom: 15px;
+    }
+    .transportion label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 2px;
+    }
+    .transport-count {
+        margin-left: 0;
+    }
+    .transport-count input[type='number'],
+    .transport-count select {
+        margin-left: 0;
+    }
+    .transport-count input[type='number'] {
+        margin-bottom: 3px;
+    }
+}
