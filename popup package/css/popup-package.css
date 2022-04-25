@@ -20,8 +20,12 @@ main {
     display: none;
     z-index: 10000;
     position: absolute;
-    bottom: 870px;
-    left: 180px;
+    top: 50%;
+    left: 5%;
+    right: 10%;
+    bottom: 30%;
+    /* bottom: 870px;
+    left: 180px; */
 }
 
 .package-gallery {
