@@ -20,4 +20,18 @@ $(document).ready(function() {
         });
     });
 
+    /************Toggle Menu*************ًo with 2 click !!!!!!!!!!!!!!!!!*/
+    $('.toggle-icons').click(function() {
+        $('.nav-elements').toggle("fast");
+    });
+    // //Hide dropdown on page click
+    // $(document).on('click', function(e) {
+
+    //     $('.nav-elements').hide();
+    //     if (!$(".toggle-icons").is(e.target) && !$(".toggle-icons").has(e.target).length) {
+    //         $('.nav-elements').hide("fast");
+    //     }
+    // });
+    /*******************!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*******************/
+
 });

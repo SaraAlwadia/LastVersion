@@ -27,18 +27,18 @@ $(document).ready(function() {
     /************Active class*************/
 
 
-    /************Toggle Menu*************Does not workkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk**/
+    /************Toggle Menu*************ً!!!!!!!!!!!!!!!!!*/
     $('.toggle-icons').click(function() {
-        $('.nav-elements').show("fast");
+        $('.nav-elements').toggle("fast");
     });
-    //Hide dropdown on page click
-    $(document).on('click', function(e) {
+    // //Hide dropdown on page click
+    // $(document).on('click', function(e) {
 
-        $('.nav-elements').hide();
-        if (!$(".toggle-icons").is(e.target) && !$(".toggle-icons").has(e.target).length) {
-            $('.nav-elements').hide("fast");
-        }
-    });
+    //     $('.nav-elements').hide();
+    //     if (!$(".toggle-icons").is(e.target) && !$(".toggle-icons").has(e.target).length) {
+    //         $('.nav-elements').hide("fast");
+    //     }
+
     /*******************!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*******************/
 
 
@@ -93,5 +93,5 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: 0
         }, 1000);
-    })
+    });
 });

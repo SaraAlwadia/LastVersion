@@ -914,6 +914,9 @@ footer.footer .rights {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 665px) {
+    * {
+        font-size: 90%;
+    }
     .max-width {
         width: 98%;
     }
@@ -948,7 +951,7 @@ footer.footer .rights {
     }
     .card1 {
         margin-bottom: 2rem;
-        width: 70%;
+        width: 85%;
     }
     .partener .owl-carousel {
         width: 65%;
@@ -981,7 +984,7 @@ footer.footer .rights {
 
 @media only screen and (max-width: 440px) {
     * {
-        font-size: 85%;
+        font-size: 83%;
     }
     .max-width {
         width: 99%;

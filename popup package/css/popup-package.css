@@ -21,9 +21,9 @@ main {
     z-index: 10000;
     position: absolute;
     top: 50%;
-    left: 5%;
-    right: 10%;
-    bottom: 30%;
+    left: -50%;
+    right: -50%;
+    bottom: 50%;
     /* bottom: 870px;
     left: 180px; */
 }
@@ -50,9 +50,10 @@ main {
     background: var(--white_color);
     outline: none;
     border: none;
-    right: 25px;
-    top: 15px;
+    right: 15px;
+    top: 10px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .package-gallery .exit:hover i {
@@ -69,6 +70,7 @@ main {
     /* flex-direction: column;
 justify-content: space-between; */
     width: 65%;
+    height: fit-content;
     padding: 15px;
 }
 
@@ -97,11 +99,12 @@ height: 5rem;
 }
 */
 
-.package-gallery .splide__list {
+
+/* .package-gallery .splide__list {
     width: 100%;
     height: 100%;
     text-align: center;
-}
+} */
 
 
 /* .thumbnail.is-active {
@@ -109,8 +112,9 @@ opacity: 1;
 } */
 
 .package-gallery .splide {
-    width: 95%;
-    height: 70vh;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
 }
 
 
@@ -220,12 +224,13 @@ justify-content: space-around;
 
 .package-gallery .right .down-sec .btns #pric {
     background: var(--btn_color);
-    width: 24%;
+    font-size: .7rem;
+    width: 28%;
     border: 2px solid var(--btn_color);
 }
 
 .package-gallery .right .down-sec .btns .book {
-    width: 74%;
+    width: 70%;
     outline: none;
     background: var(--main_color);
     border: 1px solid var(--main_color);
