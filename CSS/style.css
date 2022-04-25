@@ -226,6 +226,13 @@ display: flex;
     display: none;
 }
 
+.toggle-icons {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: inherit;
+}
+
 .nav .toggle-collapse .toggle-icons i {
     color: var(--main_color);
 }
@@ -806,9 +813,6 @@ footer.footer .rights {
 /**************Responsive*************/
 
 @media screen and (max-width: 65rem) {
-    .nav-elements {
-        display: none;
-    }
     .sign-cart i.fa-bars {
         font-size: 1.2rem;
         color: var(--main_color);
@@ -816,6 +820,30 @@ footer.footer .rights {
     }
     nav .toggle-collapse {
         display: flex;
+    }
+    .nav-elements {
+        display: none;
+    }
+    nav .nav-elements {
+        position: absolute;
+        flex-direction: column;
+        padding: 10px 15px;
+        background: var(--white_color);
+        border-radius: 7px;
+        box-shadow: 0 0 7px var(--shadow-color);
+        right: 170px;
+        top: 60px;
+        z-index: 2;
+    }
+    nav .nav-elements li {
+        margin: 8px 0;
+        cursor: pointer;
+    }
+    .hover-underline-animation:hover {
+        color: var(--main_color);
+    }
+    .hover-underline-animation:after {
+        content: none;
     }
 }
 
