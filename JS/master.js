@@ -28,9 +28,14 @@ $(document).ready(function() {
 
 
     /************Toggle Menu*************ً!!!!!!!!!!!!!!!!!*/
+
     $('.toggle-icons').click(function() {
         $('.nav-elements').toggle("fast");
     });
+
+
+
+
     // //Hide dropdown on page click
     // $(document).on('click', function(e) {
 

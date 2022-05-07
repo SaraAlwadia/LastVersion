@@ -741,7 +741,8 @@ margin: 6rem 10px;
 
 /*Start Footer*/
 
-footer.footer {
+
+/* footer.footer {
     height: fit-content;
     position: relative;
 }
@@ -804,7 +805,7 @@ footer.footer .rights {
     text-align: center;
     font-size: 1rem;
     margin: 1rem auto;
-}
+} */
 
 
 /*End Footer*/
@@ -855,13 +856,13 @@ footer.footer .rights {
         width: 991px;
         margin: auto;
     }
-    .div-margin-footer {
+    /* .div-margin-footer {
         width: 890px;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    }
+    } */
 }
 
 @media only screen and (min-width: 665px) and (max-width: 991px) {
@@ -904,13 +905,13 @@ footer.footer .rights {
     .partenetship-request .partenership-container {
         width: 90%;
     }
-    .div-margin-footer {
+    /* .div-margin-footer {
         width: 600px;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    }
+    } */
 }
 
 @media only screen and (min-width: 300px) and (max-width: 665px) {
@@ -962,7 +963,7 @@ footer.footer .rights {
     .partenetship-request .partenership-container {
         width: 90%;
     }
-    .div-margin-footer {
+    /* .div-margin-footer {
         width: 70%;
         margin: 0 auto;
         display: flex;
@@ -979,7 +980,7 @@ footer.footer .rights {
     .rights p {
         font-size: 0.7rem;
         padding: 10px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 440px) {
@@ -1044,7 +1045,7 @@ footer.footer .rights {
     .partenetship-request .partenership-container {
         width: 90%;
     }
-    .div-margin-footer {
+    /* .div-margin-footer {
         width: 90%;
         margin: 0 auto;
         display: flex;
@@ -1065,7 +1066,7 @@ footer.footer .rights {
     .rights p {
         font-size: 0.9rem;
         padding: 10px;
-    }
+    } */
 }
 
 

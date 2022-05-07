@@ -31,7 +31,7 @@ body {
     width: 991px;
     display: flex;
     flex-direction: row;
-    margin: 40px auto;
+    margin: 40px auto 100px;
     border-radius: 20px;
     background: var(--white_color);
     box-shadow: 0 0 7px var(--shadow-color);
