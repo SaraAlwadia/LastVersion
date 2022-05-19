@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="stylesheet" href="./CSS/fonts.css">
     <!-- <link rel="stylesheet" href="CSS/normalize.css"> -->
     <!-- cdjns  -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="./popup package/css/splide-default.min.css">
     <link rel="stylesheet" href="./popup package/css/popup-package.css">
     <!-- <link rel="stylesheet" href="./CSS/footer.css"> -->
-
+    <link rel="stylesheet" href="./CSS/logo.css">
     <link rel="stylesheet" href="./chatbot/css/style.css">
     <link rel="stylesheet" href="./CSS/footer-light.css">
 
@@ -43,7 +43,9 @@
 <body>
 
     <nav class="nav-bar max-width">
-        <h1 class="logo">Logo</h1>
+        <div class="logo">
+            <a href="./index.html"><img src="./imgs/partina.svg" alt=""></a>
+        </div>
         <ul class="nav-elements">
             <li class="sara"><a href="#" class="hover-underline-animation active">Home</a></li>
             <li><a href="#" class="hover-underline-animation">Marriage</a></li>
@@ -97,9 +99,9 @@
                                         <h4 class="chatbox__heading--header">Partina</h4>
                                         <p class="chatbox__description--header">Hi. My name is Sara. How can I help you?</p>
                                     </div>
-                                    <button class="chat-exit">
+                                    <!-- <button class="chat-exit">
                                         <i class="fa-regular fa-x "></i>
-                                    </button>
+                                    </button> -->
                                 </div>
                                 <div class="chatbox__messages">
                                     <div></div>
@@ -178,7 +180,7 @@
         <!--End Stores Section-->
 
         <!--Start Package Section-->
-        <section class="packge max-width" id="packge">
+        <section class="packge-index max-width" id="packge">
             <h2 class="capitalize">Packages</h2>
             <div class="cards" id="cards">
 
@@ -189,13 +191,13 @@
                   <div class="active-add"><img src="./imgs/act-card.png" alt="" class="hov"> Add to cart</div>
                 </button>
                         <div class="imges" id="imges">
-                            <img>
+                            <!-- <img src="./imgs/boy.png"> -->
                         </div>
                         <div class="package-details">
                             <h2>Birthday Party</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ducimus inventore iure.</p>
                             <div class="show-more">
-                                <h2><a class="capitalize" href="#">Show More</a></h2>
+                                <h2 class="details">Show More</h2>
                                 <div class="btn">
                                     <button type="submit" class="price" id="price1">150 &#8362;</button>
                                     <button type="submit" class="description" id="discribtion1">Book</button>
@@ -218,7 +220,7 @@
                             <h2>Birthday Party</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ducimus inventore iure.</p>
                             <div class="show-more ">
-                                <h2><a class="capitalize " href="# ">Show More</a></h2>
+                                <h2 class="details">Show More</h2>
                                 <div class="btn ">
                                     <button type="submit" class="price" id="price2">150 &#8362;</button>
                                     <button type="submit" class="description" id="discribtion2">Book</button>
@@ -231,17 +233,15 @@
 
             </div>
             <h3 class="capitalize "><a href="# "> Show More Packges &gt;</a></h3>
-        </section>
-        <!--End Package Section-->
 
-        <!--Start popup package section-->
-        <section class="package-pop" id="package-pop">
-            <div class=" package-gallery" id="package-gallery1">
-                <button class="exit">
+            <!--Start popup package section-->
+            <section class="package-pop" id="package-pop">
+                <div class="package-gallery" id="package-gallery1">
+                    <button class="exit">
                     <i class="fa-regular fa-x "></i>
                 </button>
-                <div class="left ">
-                    <!-- <ul id="thumbnails " class="thumbnails listt owl-carousel-package owl-theme-package ">
+                    <div class="left ">
+                        <!-- <ul id="thumbnails " class="thumbnails listt owl-carousel-package owl-theme-package ">
                         <li class="thumbnail ">
                             <img src="./imgs/component/filter (2).png " alt=" ">
                         </li>
@@ -266,79 +266,83 @@
                         </li>
     
                     </ul> -->
-                    <section id="main-carousel " class="splide ">
-                        <div class="splide__track ">
-                            <ul class="splide__list ">
-                                <li class="splide__slide ">
-                                    <img src="./imgs/h1.jpg " alt=" ">
-                                </li>
-                                <li class="splide__slide ">
-                                    <img src="./imgs/h2.jpg " alt=" ">
-                                </li>
-                                <li class="splide__slide ">
-                                    <img src="./imgs/h3.jpg " alt=" ">
-                                </li>
-                                <li class="splide__slide ">
-                                    <img src="./imgs/h4.jpg " alt=" ">
-                                </li>
-                                <li class="splide__slide ">
-                                    <img src="./imgs/h5.jpg " alt=" ">
-                                </li>
-                                <li class="splide__slide ">
-                                    <img src="./imgs/h6.jpg " alt=" ">
-                                </li>
-                                <li class="splide__slide ">
-                                    <img src="./imgs/h7.jpg " alt=" ">
-                                </li>
+                        <section id="main-carousel " class="splide ">
+                            <div class="splide__track ">
+                                <ul class="splide__list ">
+                                    <li class="splide__slide ">
+                                        <img src="./imgs/h1.jpg " alt=" ">
+                                    </li>
+                                    <li class="splide__slide ">
+                                        <img src="./imgs/h2.jpg " alt=" ">
+                                    </li>
+                                    <li class="splide__slide ">
+                                        <img src="./imgs/h3.jpg " alt=" ">
+                                    </li>
+                                    <li class="splide__slide ">
+                                        <img src="./imgs/h4.jpg " alt=" ">
+                                    </li>
+                                    <li class="splide__slide ">
+                                        <img src="./imgs/h5.jpg " alt=" ">
+                                    </li>
+                                    <li class="splide__slide ">
+                                        <img src="./imgs/h6.jpg " alt=" ">
+                                    </li>
+                                    <li class="splide__slide ">
+                                        <img src="./imgs/h7.jpg " alt=" ">
+                                    </li>
 
-                            </ul>
-                        </div>
-                    </section>
-
-
-                </div>
-
-                <!-- </div> -->
-                <div class="right ">
-
-                    <div class="info ">
-                        <div class="up-sec ">
-                            <h2 id="head1 ">Birthday Party</h2>
-                            <ul>
-                                <li class="info-list ">Lorem ipsum dolor sit amet</li>
-                                <li class="info-list ">Lorem ipsum dolor sit amet</li>
-                                <li class="info-list ">Lorem ipsum dolor sit amet</li>
-                                <li class="info-list ">Lorem ipsum dolor sit amet</li>
-                                <li class="info-list ">Lorem ipsum dolor sit amet</li>
-                                <li class="info-list ">Lorem ipsum dolor sit amet</li>
-                            </ul>
-                        </div>
-                        <div class="down-sec ">
-                            <h3>Fill in information:</h3>
-                            <div class="book-time ">
-                                <label for="package-date1" class="capitalize ">Booking date</label>
-                                <input type="date" id="package-date1">
+                                </ul>
                             </div>
-                            <div class="book-time ">
-                                <label for="package-timefrom1" class="capitalize ">Booking Time <span>(from:)</span></label>
-                                <input type="time" id="package-timefrom1">
-                            </div>
-                            <div class="book-time">
-                                <label for="package-timeto1" class="capitalize ">Booking Time <span>(to:)</span></label>
-                                <input type="time" id="package-timeto1">
-                            </div>
-                            <div class="btns ">
-                                <div id="pric">150<span> &#8362;</span></div>
-                                <button class="book "><a href="# ">Booking</a></button>
-                            </div>
-                        </div>
+                        </section>
+
+
                     </div>
-                    <!-- <div class="fillin "></div> -->
+
+                    <!-- </div> -->
+                    <div class="right ">
+
+                        <div class="info ">
+                            <div class="up-sec ">
+                                <h2 id="head1 ">Birthday Party</h2>
+                                <ul>
+                                    <li class="info-list ">Lorem ipsum dolor sit amet</li>
+                                    <li class="info-list ">Lorem ipsum dolor sit amet</li>
+                                    <li class="info-list ">Lorem ipsum dolor sit amet</li>
+                                    <li class="info-list ">Lorem ipsum dolor sit amet</li>
+                                    <li class="info-list ">Lorem ipsum dolor sit amet</li>
+                                    <li class="info-list ">Lorem ipsum dolor sit amet</li>
+                                </ul>
+                            </div>
+                            <div class="down-sec ">
+                                <h3>Fill in information:</h3>
+                                <div class="book-time ">
+                                    <label for="package-date1" class="capitalize ">Booking date</label>
+                                    <input type="date" id="package-date1">
+                                </div>
+                                <div class="book-time ">
+                                    <label for="package-timefrom1" class="capitalize ">Booking Time <span>(from:)</span></label>
+                                    <input type="time" id="package-timefrom1">
+                                </div>
+                                <div class="book-time">
+                                    <label for="package-timeto1" class="capitalize ">Booking Time <span>(to:)</span></label>
+                                    <input type="time" id="package-timeto1">
+                                </div>
+                                <div class="btns ">
+                                    <div id="pric">150<span> &#8362;</span></div>
+                                    <button class="book "><a href="# ">Booking</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="fillin "></div> -->
+                    </div>
+                    <!-- </div> -->
                 </div>
-                <!-- </div> -->
-            </div>
+            </section>
+            <!--End popup package section-->
         </section>
-        <!--End popup package section-->
+        <!--End Package Section-->
+
+
 
 
 
@@ -409,7 +413,7 @@
     </main>
 
     <!--Start Footer-->
-    <footer class="footer">
+    <footer class="light-footer">
         <div class="container-footer div-margin-footer max-width" id="index-footer-container">
             <div class="footer-list">
                 <h3 class="capitalize ">Events</h3>
@@ -481,6 +485,7 @@
     <script src="./JS/master.js "></script>
     <script src="./popup package/js/gallery.js"></script>
     <script src="./chatbot/js/app.js"></script>
+    <script src="JS/move-up.js"></script>
 </body>
 
 </html>

@@ -7,26 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../CSS/logo.css">
     <link rel="stylesheet" href="../CSS/fonts.css">
     <link rel="stylesheet" href="../CSS/nav.css">
     <link rel="stylesheet" href="../CSS/footer.css">
-
 
     <title>Filter</title>
 </head>
 
 <body>
-    <nav class="nav-bar">
+    <nav>
         <div class="div-margin nav-bar">
-            <h1 class="logo">Logo</h1>
+            <div class="logo">
+                <a href="../index.html"><img src="../imgs/partina2new-01.svg" alt=""></a>
+            </div>
             <ul class="nav-elements">
                 <li><a href="../index.html" class="hover-underline-animation">Home</a></li>
-                <li><a href="#" class="hover-underline-animation">Marriage</a></li>
+                <li><a href="#" class="hover-underline-animation ">Marriage</a></li>
                 <li><a href="#" class="hover-underline-animation">Birthday</a></li>
                 <li><a href="#" class="hover-underline-animation">Graduation</a></li>
                 <li><a href="#" class="hover-underline-animation">Meeting</a></li>
                 <li><a href="#" class="hover-underline-animation">Youth Parties</a></li>
-                <li><a href="../packages/package.html" class="hover-underline-animation">Packages</a></li>
+                <li><a href="../packages/package.html" class="hover-underline-animation active">Packages</a></li>
             </ul>
             <div class="sign-cart">
                 <div class="toggle-collapse">
@@ -40,10 +42,10 @@
         </div>
     </nav>
     <main>
-        <h1 class="head-title header"><span>SPECIFY</span> your requirements and let us<br>provide you with what you <span>NEED</span></h1>
+        <h1 class="head-title filter-header"><span>SPECIFY</span> your requirements and let us<br>provide you with what you <span>NEED</span></h1>
         <div class="bg"></div>
         <form class="filter-container" action="" method="get">
-            <div class="event-type container">
+            <div class="event-type form-container">
                 <h2>Select your choices:</h2>
                 <h3 class="capitalize">Event type</h3>
                 <label for="marrage" class="check-box capitalize">Marrage
@@ -72,7 +74,7 @@
                     <input type="text" id="other-type-txt">
                 </label>
             </div>
-            <div class="budget container">
+            <div class="budget form-container">
                 <h3 class="capitalize">Your budget</h3>
                 <label for="budget500" class="check-box capitalize">100 - 500 &#8362;
                     <input type="checkbox" id="budget500">
@@ -101,7 +103,7 @@
                 </label>
             </div>
 
-            <div class="region container">
+            <div class="region form-container">
                 <h3 class="capitalize">Region</h3>
                 <label for="gaza" class="check-box capitalize">gaza
                         <input type="checkbox" id="gaza">
@@ -129,7 +131,7 @@
                     </label>
             </div>
 
-            <div class="services container">
+            <div class="services form-container">
                 <h3 class="capitalize">services</h3>
                 <label for="hall" class="check-box capitalize">hall
                     <input type="checkbox" id="hall">
@@ -161,7 +163,7 @@
                 </label>
             </div>
 
-            <div class="fill-info container">
+            <div class="fill-info form-container">
                 <h3 class="capitalize">Fill in information</h3>
                 <div class="booking">
                     <div class="booking-dt">

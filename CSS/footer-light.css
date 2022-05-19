@@ -1,37 +1,49 @@
 /*Start Footer*/
 
-footer.footer {
+:root {
+    /*Theme Color*/
+    --main_color: #ff8d8d;
+    --second_color: #272c32;
+    --btn_color: #3f4551;
+    --white_color: #FFF;
+    --shadow-color: #757575;
+    /*Theme font-family*/
+    --Roborto: 'Roboto', 'sans-serif';
+    --Roboto-Slab: 'Roboto-Slab', 'sans-serif';
+}
+
+footer.light-footer {
     height: fit-content;
     position: relative;
 }
 
-footer.footer .container-footer {
+footer.light-footer .container-footer {
     display: flex;
     justify-content: space-around;
 }
 
-footer.footer .container-footer h3 {
+footer.light-footer .container-footer h3 {
     font-size: 1rem;
     margin: 0 10px 10px 10px;
     color: var(--second_color);
 }
 
-footer.footer .container-footer li a {
+footer.light-footer .container-footer li a {
     line-height: 1.7;
     font-size: .9rem;
     color: var(--shadow-color);
 }
 
-footer.footer .container-footer .follow-us {
+footer.light-footer .container-footer .follow-us {
     text-align: center;
 }
 
-footer.footer .container-footer .social {
+footer.light-footer .container-footer .social {
     display: flex;
     justify-content: space-between;
 }
 
-footer.footer .container-footer .social i {
+footer.light-footer .container-footer .social i {
     font-size: 1.7rem;
     color: var(--main_color);
     border-radius: 50%;
@@ -58,7 +70,7 @@ hr {
     margin: 20px 0 0;
 }
 
-footer.footer .rights {
+footer.light-footer .rights {
     color: var(--btn_color);
     text-align: center;
     font-size: 1rem;
@@ -100,7 +112,7 @@ footer.footer .rights {
         text-align: center;
         flex-wrap: wrap;
     }
-    footer.footer .div-margin-footer .social {
+    footer.light-footer .div-margin-footer .social {
         display: flex;
         width: 70%;
         margin: auto;
@@ -114,7 +126,7 @@ footer.footer .rights {
 
 @media only screen and (max-width: 440px) {
     * {
-        font-size: 83%;
+        font-size: 90%;
     }
     .div-margin-footer {
         width: 90%;
@@ -125,7 +137,7 @@ footer.footer .rights {
         flex-wrap: wrap;
         text-align: center;
     }
-    footer.footer .div-margin-footer .social {
+    footer.light-footer .div-margin-footer .social {
         display: flex;
         width: 40%;
         margin: auto;

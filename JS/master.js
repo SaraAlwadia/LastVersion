@@ -16,35 +16,15 @@ const responsive = {
 $(document).ready(function() {
 
     /************Active class*************/
-    $(".nav-elements").on('click', 'a', function() {
+    // $(".nav-elements").on('click', 'a', function() {
 
-        // remove classname 'active' from all li who already has classname 'active'
-        $(".nav-elements a.active").removeClass("active");
+    //     // remove classname 'active' from all li who already has classname 'active'
+    //     $(".nav-elements a.active").removeClass("active");
 
-        // adding classname 'active' to current click li 
-        $(this).addClass("active");
-    });
+    //     // adding classname 'active' to current click li 
+    //     $(this).addClass("active");
+
     /************Active class*************/
-
-
-    /************Toggle Menu*************ً!!!!!!!!!!!!!!!!!*/
-
-    $('.toggle-icons').click(function() {
-        $('.nav-elements').toggle("fast");
-    });
-
-
-
-
-    // //Hide dropdown on page click
-    // $(document).on('click', function(e) {
-
-    //     $('.nav-elements').hide();
-    //     if (!$(".toggle-icons").is(e.target) && !$(".toggle-icons").has(e.target).length) {
-    //         $('.nav-elements').hide("fast");
-    //     }
-
-    /*******************!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*******************/
 
 
     /************ owlCarousel *************/
@@ -85,18 +65,11 @@ $(document).ready(function() {
         });
     });
 
-    /******************** Slider Gallery */ /////////////////
-
+    /******************** Slider Gallery ******************************/
     function displyPackage() {
         var popup = document.getElementById("package-gallery1");
         popup.classList.toggle("show");
     }
+    /******************** Slider Gallery ******************************/
 
-
-    // click to scroll top
-    $('.move-up span').click(function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 1000);
-    });
 });

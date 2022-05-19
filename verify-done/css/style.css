@@ -1,5 +1,10 @@
     @import url('../CSS/fonts.css');
-    @import url(../../verfication/css/style.css);
+    body {
+        background: #ededed;
+        margin: 0;
+        padding: 0;
+    }
+    
      :root {
         /*Theme Color*/
         --main_color: #ff8d8d;
@@ -9,18 +14,52 @@
         --shadow-color: #757575;
     }
     
+    .done-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        background: var(--white_color);
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    h1 {
+        color: var(--second_color);
+        font-size: 1.4rem;
+    }
+    
     img.done {
-        margin: 5rem 0;
+        margin: 15px 0;
+        width: 50px;
+    }
+    
+    .cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 290px;
+    }
+    
+    .cont img {
+        width: 40px;
+        height: 40px;
     }
     
     p {
         color: #4BB543;
     }
     
-    .cont .container button.btn {
+    .done-container button.btn {
         width: 60%;
         background: var(--main_color);
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        outline: none;
+        border: none;
+        padding: 7px 2px;
         border-radius: 7px;
         -webkit-border-radius: 7px;
         -moz-border-radius: 7px;
@@ -28,7 +67,7 @@
         -o-border-radius: 7px;
     }
     
-    .container button.btn a {
+    .done-container button.btn a {
         text-decoration: none;
         color: var(--white_color);
     }

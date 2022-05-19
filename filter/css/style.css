@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--Roborto);
+    font-weight: normal;
 }
 
 :root {
@@ -17,6 +18,10 @@
     --Roboto-Slab: 'Roboto-Slab', 'sans-serif';
 }
 
+.active {
+    color: var(--main_color);
+}
+
 .capitalize {
     text-transform: capitalize;
 }
@@ -25,12 +30,6 @@ h2 {
     color: var(--main_color);
     font-size: 1.2rem;
     margin: 0 0 1.8rem;
-}
-
-h3 {
-    color: var(--second_color);
-    font-size: 1.2rem;
-    margin: 1.5rem 0;
 }
 
 input {
@@ -48,24 +47,19 @@ label {
     cursor: pointer;
 }
 
-.container {
-    width: 92%;
-    margin: 0 4%;
-}
-
-.header {
+.filter-header {
     text-align: center;
     font-size: 1.3rem;
     background: #0A1420;
-    /* margin-bottom: 1.2rem; */
     padding: 3rem 0 0;
+    line-height: 1.8;
 }
 
 .bg {
     margin: 0;
     height: 8rem;
     background: rgb(10, 20, 32);
-    background: linear-gradient(180deg, rgba(10, 20, 32, 1) 16%, rgba(10, 20, 32, 0.964023) 43%, rgba(255, 255, 255, .56666) 96%);
+    background: linear-gradient(180deg, rgba(10, 20, 32, 1)30%, rgba(237, 237, 237, 0)95%);
 }
 
 .check-mark {
@@ -132,20 +126,27 @@ main h1.head-title span {
 
 .filter-container {
     width: 791px;
-    margin: -120px auto 0;
+    margin: -50px auto 0;
 }
 
-.container {
+.form-container {
+    /* width: 92%; */
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: var(--white_color);
     padding: 3rem;
-    margin: 4rem 0;
+    margin: 5rem auto;
     box-shadow: 0 0 20px #bababa;
     border-left: 15px solid var(--main_color);
     border-right: 10px solid var(--white_color);
+}
+
+.form-container h3 {
+    color: var(--second_color);
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
 }
 
 .event-type {
@@ -286,7 +287,7 @@ input[type='time']:focus {
     outline: none;
     border: none;
     border-radius: 10px;
-    margin: 6rem 0;
+    margin: 2rem 0;
     box-shadow: 0 0 8px var(--shadow-color);
     transition: all ease-in .2s;
 }
@@ -311,7 +312,7 @@ input[type='time']:focus {
 
 @media only screen and (min-width: 991px) and (max-width: 1024px) {
     .filter-container {
-        width: 791px;
+        width: 800px;
     }
 }
 
@@ -349,7 +350,7 @@ input[type='time']:focus {
     }
     .filter-container {
         width: 92%;
-        margin: -120px auto 0;
+        margin: -80px auto 0;
     }
     .fill-info .booking {
         display: flex;

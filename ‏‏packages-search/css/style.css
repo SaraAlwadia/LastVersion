@@ -166,8 +166,15 @@ section.header h1 span {
     margin-top: 15px;
 }
 
-.show-more a {
+.show-more h2 {
+    color: var(--main_color);
+    /* font-weight: bold; */
+    text-decoration: none;
+    position: relative;
+    font-size: 1rem;
     padding: 0;
+    margin: 0;
+    cursor: pointer;
 }
 
 .card .btn {

@@ -17,7 +17,7 @@
             --second_color: #272c32;
             --btn_color: #3f4551;
             --white_color: #FFF;
-            --shadow-color: #888;
+            --shadow-color: #cfcfcf;
             --Roborto: 'Roboto', 'sans-serif';
             --Roboto-Slab: 'Roboto-Slab', 'sans-serif';
         }
@@ -77,13 +77,16 @@
             text-transform: capitalize;
         }
         
+        .div-margin {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        
         .nav-bar {
             padding: 1rem 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 90%;
-            margin: 0 5%;
         }
         
         .nav-elements {
@@ -146,12 +149,12 @@
         form #submit-btn,
         form #submit-btn-reg,
         form #submit-btn-partener {
-            height: 8vh;
+            /* height: 8vh; */
             border-radius: 10px;
             border: 1px solid var(--btn_color);
             width: 100%;
             margin: 5px 0;
-            padding: 20px;
+            padding: 17px;
         }
         
         .sign button.active {
@@ -163,7 +166,7 @@
         #signup-form input[type='text'],
         #signup-form input[type='password'] {
             margin: 5px 0;
-            height: 7vh;
+            /* height: 7vh; */
         }
         
         input:focus {
@@ -221,7 +224,7 @@
             padding: 5vh 5vw;
             background: var(--white_color);
             border-radius: 10px;
-            box-shadow: 0px 0px 8px var(--shadow-color);
+            box-shadow: 0px 0px 20px var(--shadow-color);
         }
         
         main section.container {
@@ -288,7 +291,7 @@
             width: 15%;
             position: relative;
             left: 13px;
-            top: 17px;
+            top: 15px;
         }
         
         #second .input-container:first-child {
@@ -300,7 +303,7 @@
         form #submit-btn-partener {
             background: var(--main_color);
             color: var(--white_color);
-            height: 7vh;
+            /* height: 7vh; */
             line-height: .2;
             font-size: 23px;
             cursor: pointer;
@@ -360,7 +363,7 @@
         
         .soc-login button {
             width: calc(97%/2);
-            height: 7vh;
+            /* height: 7vh; */
             border-radius: 10px;
             border: 1px solid var(--btn_color);
             background: var(--white_color);
@@ -371,6 +374,7 @@
             justify-content: center;
             align-items: center;
             padding: 10px auto;
+            padding: 7px;
         }
         
         section.partener-login h2 {
@@ -389,7 +393,7 @@
         }
         
         #signin {
-            left: 50px;
+            left: 0px;
         }
         
         #signin {
@@ -401,7 +405,18 @@
         }
         /*******************Responsive********************/
         
+        @media only screen and (min-width: 991px) and (max-width: 1024px) {
+            .div-margin {
+                width: 890px;
+                margin: 0 auto;
+            }
+        }
+        
         @media only screen and (min-width: 665px) and (max-width: 991px) {
+            .div-margin {
+                width: 90%;
+                margin: 0 auto;
+            }
             main.form {
                 width: 600px;
             }
@@ -441,16 +456,22 @@
         }
         
         @media only screen and (min-width: 300px) and (max-width: 665px) {
-            * {
-                font-size: 85%;
+            .div-margin{
+                width: 90%;
+                margin: 0 auto;
+            }
+            body {
+                background: var(--white_color);
             }
             main.form {
                 width: 300px;
+                background: none;
+                box-shadow: none;
             }
             a.back-home {
                 left: 100px;
-                top: 10px;
-                margin-bottom: 4rem;
+                top: -10px;
+                /* margin-bottom: 6rem; */
             }
             a.back-home h4 {
                 font-size: 1rem;

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../CSS/logo.css">
     <link rel="stylesheet" href="../CSS/fonts.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -15,7 +16,9 @@
 
 <body>
     <nav class="nav-bar div-margin">
-        <h1 class="logo">Logo</h1>
+        <div class="logo">
+            <a href="./index.html"><img src="../imgs/partina.svg" alt=""></a>
+        </div>
         <ul class="nav-elements">
             <li><a href="../index.html" class="hover-underline-animation">Home</a></li>
             <li><a href="#" class="hover-underline-animation">Marriage</a></li>
@@ -31,7 +34,10 @@
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
-            <button class="cart-img"><a href="../cart/cart.html"><img src="../imgs/cart.PNG" alt="" class="cart"><img src="../imgs/card-bg.png" alt="" class="cart-bg"></a></button>
+            <div class="items-cart">
+                <button class="cart-img"><a href="../cart/cart.html"><img src="../imgs/cart.PNG" alt="" class="cart"><img src="../imgs/card-bg.png" alt="" class="cart-bg"></a></button>
+                <button class="count-items">1</button>
+            </div>
             <div class="profile-img dropdown">
                 <button class="dropdown-toggle"><img src="../imgs/woman.png" alt=""></button>
                 <ul id="myDropdown" class="dropdown-content dropdown">
@@ -52,12 +58,15 @@
     <main>
         <section class="shopping-cart">
             <div class="header-data">
-                <h1 class="service">Product</h1>
-                <div class="service-details">
-                    <h1>Price</h1>
-                    <h1 class="margn">Quantity</h1>
-                    <h1>Total</h1>
+                <div class="service">
+                    <h1>Product</h1>
                 </div>
+                <div class="service-details">
+                    <h1 class="unit-price">Price</h1>
+                    <h1 class="margn quantity">Quantity</h1>
+                    <h1 class="total-price">Total</h1>
+                </div>
+                <div class="buttons"></div>
             </div>
 
             <div class="al-items">
@@ -88,7 +97,6 @@
                         <div class="total-price"><span>549</span> &#8362;</div>
                     </div>
                     <div class="buttons">
-                        <!-- <span class="like-btn"><i class="fa-solid fa-heart"></i></span> -->
                         <span class="delete-btn"><i class="fa-regular fa-x"></i></span>
                     </div>
 
@@ -230,10 +238,7 @@
                 <button class="go-check" type="submit">Proceed to Checkout</button>
             </div>
 
-            <!--Add Empty class-->
-            <!-- <div class="empt">
-            <h1 class="empty">Your Cart is Empty!</h1>
-        </div> -->
+            </div>
         </section>
 
     </main>
@@ -292,9 +297,7 @@
     </footer>
     <script src="../JS/jquery3.4.1.min.js"></script>
     <script src="./js/master.js"></script>
-    <!-- <script src="../JS/index-login.js"></script> -->
     <script src="../JS/move-up.js"></script>
-    <script src="../JS/index-login.js"></script>
 </body>
 
 </html>

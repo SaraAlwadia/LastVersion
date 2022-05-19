@@ -56,7 +56,7 @@ html {
 }
 
 .chatbox__header {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     background: var(--main-color);
     display: flex;
@@ -190,7 +190,7 @@ html {
 /* FOOTER */
 
 .chatbox__footer {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     flex-direction: row;
     align-items: center;

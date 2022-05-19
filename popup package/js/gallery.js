@@ -1,12 +1,25 @@
 $(document).ready(function() {
 
     //Pop Up
-    $('.description').on('click', function() {
+    $('.details').on('click', function() {
         $('.package-pop').fadeIn();
     });
+    // $('.details').click(function() {
+    //     $('.package-pop').addClass("popup-active");
+    // });
     $('.exit').on('click', function() {
         $('.package-pop').fadeOut();
     });
+
+    /*********************************!!!!!!!!!!!!!!!!!!********************************/
+    // $(document).on('click', function(e) {
+    //     if (!$(".exit").is(e.target) && !$(".details").has(e.target).length && $('.package-pop').hasClass('popup-active')) {
+    //         $('.popup-active').fadeOut("fast");
+    //         $('.package-pop').removeClass("popup-active");
+    //     }
+    // });
+    /*********************************!!!!!!!!!!!!!!!!!!********************************/
+
 
     // Slider
     var splide = new Splide('#main-carousel', {
