@@ -57,9 +57,9 @@ label {
 
 .bg {
     margin: 0;
-    height: 8rem;
+    height: 9rem;
     background: rgb(10, 20, 32);
-    background: linear-gradient(180deg, rgba(10, 20, 32, 1)30%, rgba(237, 237, 237, 0)95%);
+    background: linear-gradient(180deg, rgba(10, 20, 32, 1)30%, rgb(108 125 146 / 0%)100%, rgba(237, 237, 237, 0)100%);
 }
 
 .check-mark {
@@ -113,10 +113,11 @@ section.nav {
 }
 
 main h1.head-title {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     text-align: center;
     font-family: var(--Roboto-Slab);
     color: var(--white_color);
+    height: 180px;
 }
 
 main h1.head-title span {
@@ -126,18 +127,17 @@ main h1.head-title span {
 
 .filter-container {
     width: 791px;
-    margin: -50px auto 0;
+    margin: -110px auto 0;
 }
 
 .form-container {
-    /* width: 92%; */
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: var(--white_color);
     padding: 3rem;
-    margin: 5rem auto;
+    margin: 4rem auto;
     box-shadow: 0 0 20px #bababa;
     border-left: 15px solid var(--main_color);
     border-right: 10px solid var(--white_color);
@@ -287,8 +287,8 @@ input[type='time']:focus {
     outline: none;
     border: none;
     border-radius: 10px;
-    margin: 2rem 0;
-    box-shadow: 0 0 8px var(--shadow-color);
+    margin: 7rem 0;
+    box-shadow: 0 0 15px #b0b0b0ed;
     transition: all ease-in .2s;
 }
 

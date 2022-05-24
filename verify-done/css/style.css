@@ -41,12 +41,12 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 290px;
+        width: 280px;
     }
     
     .cont img {
-        width: 40px;
-        height: 40px;
+        width: 22px;
+        height: 22px;
     }
     
     p {
@@ -54,13 +54,14 @@
     }
     
     .done-container button.btn {
-        width: 60%;
+        width: 280px;
         background: var(--main_color);
-        font-size: 1.1rem;
+        font-size: 1rem;
         outline: none;
         border: none;
-        padding: 7px 2px;
-        border-radius: 7px;
+        padding: 10px 2px;
+        border-radius: 5px;
+        margin-top: 10px;
         -webkit-border-radius: 7px;
         -moz-border-radius: 7px;
         -ms-border-radius: 7px;

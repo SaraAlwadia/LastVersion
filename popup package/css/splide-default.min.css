@@ -407,9 +407,8 @@
                         .splide__pagination {
                             bottom: -25px;
                         }
-                        .splide__arrow--prev {
-                            left: 0;
-                            bottom: -32px;
+                        .splide__arrow {
+                            bottom: -44px;
                         }
                     }
                     

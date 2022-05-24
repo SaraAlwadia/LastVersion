@@ -59,91 +59,119 @@
                 <i class="fa-solid fa-arrow-left-long"></i>
                 <h4>Back to Home</h4>
             </a>
-            <div class="left">
-                <div class="color-bg"></div>
-                <div class="profile-img">
-                    <div class="change-cover">
-                        <img src="../imgs/mazag.png" alt="">
-                        <input type="file" name="profilepic">
-                        <i class="fa-solid fa-pen"></i>
+
+            <div class="profile-acc" id="first">
+
+                <div class="profile-info ">
+                    <div class="left">
+                        <div class="color-bg"></div>
+                        <div class="profile-img">
+                            <div class="change-cover">
+                                <img src="../imgs/mazag.png" alt="">
+                                <!-- <input type="file" name="profilepic">
+                            <i class="fa-solid fa-pen"></i> -->
+                            </div>
+                            <h1 class="profile-name capitalize">Sara Alwadia</h1>
+                            <button class="edit-profile capitalize" id="account-edit">edit profile</button>
+                            <a href="../index.html" class="sign-out">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                <h2 class="signout capitalize">sign out</h2>
+                            </a>
+                        </div>
                     </div>
-                    <h1 class="profile-name capitalize">Sara Sara</h1>
-                    <button class="edit-profile capitalize" id="account-edit">edit profile</button>
-                    <a href="../index.html" class="sign-out">
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        <h2 class="signout capitalize">sign out</h2>
-                    </a>
+                    <div class="right">
+                        <h1 class="header">Personal Information</h1>
+                        <form action="" method="post" class="right profile-form">
+                            <div class="full-name">
+                                <div class="name">
+                                    <label for="fname" class="capitalize">first name</label>
+                                    <input id="fname" type="text" value="Sara">
+                                </div>
+                                <div class="name">
+                                    <label for="mname" class="capitalize">mid name</label>
+                                    <input id="mname" type="text" value="Mohammed">
+                                </div>
+                                <div class="name">
+                                    <label for="lname" class="capitalize">last name</label>
+                                    <input id="lname" type="text" value="Alwadia">
+                                </div>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact">
+                                    <label for="phone-nom" class="capitalize">phone number</label>
+                                    <input id="phone-nom" type="tel" value="+970000000000">
+                                </div>
+                                <div class="contact">
+                                    <label for="email" class="capitalize">e-mail</label>
+                                    <input id="email" type="email" value="example@gmail.com">
+                                </div>
+                                <div class="contact">
+                                    <label for="address" class="capitalize">Address</label>
+                                    <input id="adders" type="text" value="Gaza, Street">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="right" id="first">
-                <h1 class="header">Personal Information</h1>
+            <div class="profile-acc" id="second">
                 <form action="" method="post" class="profile-form">
-                    <div class="full-name">
-                        <div class="name">
-                            <label for="fname" class="capitalize">first name</label>
-                            <input id="fname" type="text" value="Sara">
+                    <div class="profile-info">
+                        <div class="left">
+                            <div class="color-bg"></div>
+                            <div class="profile-img">
+                                <div class="change-cover">
+                                    <img src="../imgs/mazag.png" alt="">
+                                    <input type="file" name="profilepic">
+                                    <i class="fa-solid fa-pen"></i>
+                                </div>
+                                <h1 class="profile-name capitalize">Sara Alwadia</h1>
+                                <!-- <button class="edit-profile capitalize" id="account-edit">edit profile</button> -->
+                                <a href="../index.html" class="sign-out">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <h2 class="signout capitalize">sign out</h2>
+                                </a>
+                            </div>
                         </div>
-                        <div class="name">
-                            <label for="mname" class="capitalize">mid name</label>
-                            <input id="mname" type="text" value="Mohammed">
-                        </div>
-                        <div class="name">
-                            <label for="lname" class="capitalize">last name</label>
-                            <input id="lname" type="text" value="Alwadia">
-                        </div>
-                    </div>
-                    <div class="contact-info">
-                        <div class="contact">
-                            <label for="phone-nom" class="capitalize">phone number</label>
-                            <input id="phone-nom" type="tel" value="+970000000000">
-                        </div>
-                        <div class="contact">
-                            <label for="email" class="capitalize">e-mail</label>
-                            <input id="email" type="email" value="example@gmail.com">
-                        </div>
-                        <div class="contact">
-                            <label for="address" class="capitalize">Address</label>
-                            <input id="adders" type="text" value="Gaza, Street">
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="right" id="second">
-                <h1 class="header">Account Settings</h1>
-                <form action="" method="post" class="profile-form">
-                    <div class="full-name">
-                        <div class="name">
-                            <label for="fname-edit" class="capitalize">first name</label>
-                            <input id="fname-edit" type="text" placeholder="First Name">
-                        </div>
-                        <div class="name">
-                            <label for="mname-edit" class="capitalize">mid name</label>
-                            <input id="mname-edit" type="text" placeholder="Mid Name">
-                        </div>
-                        <div class="name">
-                            <label for="lname-edit" class="capitalize">last name</label>
-                            <input id="lname-edit" type="text" placeholder="Last Name">
-                        </div>
-                    </div>
-                    <div class="contact-info">
-                        <div class="contact">
-                            <label for="phone-nom-edit" class="capitalize">phone number</label>
-                            <input id="phone-nom-edit" type="tel" placeholder="+970000000000">
-                        </div>
-                        <div class="contact">
-                            <label for="email-edit" class="capitalize">e-mail</label>
-                            <input id="email-edit" type="email" placeholder="example@gmail.com">
-                        </div>
-                        <div class="contact">
-                            <label for="address-edit" class="capitalize">Address</label>
-                            <input id="adders-edit" type="text" placeholder="City, Street">
-                        </div>
-                    </div>
-                    <div class="save-cancel">
-                        <button type="submit" id="save-changes" class="capitalize">save changes</button>
-                        <button type="button" id="cancel-changes" class="capitalize">Cancel</button>
+                        <div class="right">
+                            <h1 class="header">Account Settings</h1>
 
+                            <div class="full-name">
+                                <div class="name">
+                                    <label for="fname-edit" class="capitalize">first name</label>
+                                    <input id="fname-edit" type="text" placeholder="First Name">
+                                </div>
+                                <div class="name">
+                                    <label for="mname-edit" class="capitalize">mid name</label>
+                                    <input id="mname-edit" type="text" placeholder="Mid Name">
+                                </div>
+                                <div class="name">
+                                    <label for="lname-edit" class="capitalize">last name</label>
+                                    <input id="lname-edit" type="text" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact">
+                                    <label for="phone-nom-edit" class="capitalize">phone number</label>
+                                    <input id="phone-nom-edit" type="tel" placeholder="+970000000000">
+                                </div>
+                                <div class="contact">
+                                    <label for="email-edit" class="capitalize">e-mail</label>
+                                    <input id="email-edit" type="email" placeholder="example@gmail.com">
+                                </div>
+                                <div class="contact">
+                                    <label for="address-edit" class="capitalize">Address</label>
+                                    <input id="adders-edit" type="text" placeholder="City, Street">
+                                </div>
+                                <div class="save-cancel">
+                                    <button type="submit" id="save-changes" class="capitalize">save changes</button>
+                                    <button type="button" id="cancel-changes" class="capitalize">Cancel</button>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
+
                 </form>
             </div>
 

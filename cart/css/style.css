@@ -181,21 +181,6 @@ nav .toggle-collapse {
     cursor: pointer;
 }
 
-
-/* @media screen and (max-width: 65rem) {
-    .nav-elements {
-        display: none;
-    }
-    .sign-cart i.fa-bars {
-        font-size: 1.2rem;
-        color: var(--main_color);
-        margin-right: .7rem;
-    }
-    nav .toggle-collapse {
-        display: flex;
-    }
-} */
-
 .sign-in {
     background-color: var(--btn_color);
     border: none;
@@ -242,7 +227,7 @@ nav .toggle-collapse {
 .shopping-cart {
     position: relative;
     width: 900px;
-    height: 550px;
+    height: 580px;
     margin: 8.5vh auto;
     padding: 60px;
     background: var(--white_color);
@@ -401,7 +386,7 @@ input:focus {
 .check {
     position: absolute;
     right: 10vh;
-    bottom: 10px;
+    bottom: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -463,6 +448,26 @@ input:focus {
         background-position: right;
     }
 }
+
+
+/****************Empty Cart***************/
+
+.empty-container {
+    text-align: center;
+    margin: 3rem auto 6rem;
+}
+
+.empty-container img {
+    width: 30rem;
+    margin-bottom: 2rem;
+}
+
+.oops span {
+    color: #ff5f5f;
+}
+
+
+/****************Empty Cart***************/
 
 
 /* Responsive */
@@ -540,7 +545,7 @@ input:focus {
         height: 2rem;
     }
     .al-items {
-        width: 40rem;
+        width: 36rem;
         margin-bottom: 3rem;
     }
 }

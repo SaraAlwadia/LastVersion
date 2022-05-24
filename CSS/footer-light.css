@@ -38,12 +38,17 @@ footer.light-footer .container-footer .follow-us {
     text-align: center;
 }
 
+footer .follow-us {
+    text-align: center;
+}
+
 footer.light-footer .container-footer .social {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
-footer.light-footer .container-footer .social i {
+footer.light-footer .social i {
     font-size: 1.7rem;
     color: var(--main_color);
     border-radius: 50%;
@@ -101,9 +106,6 @@ footer.light-footer .rights {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 665px) {
-    * {
-        font-size: 90%;
-    }
     .div-margin-footer {
         width: 70%;
         margin: 0 auto;
@@ -125,9 +127,6 @@ footer.light-footer .rights {
 }
 
 @media only screen and (max-width: 440px) {
-    * {
-        font-size: 90%;
-    }
     .div-margin-footer {
         width: 90%;
         margin: 0 auto;

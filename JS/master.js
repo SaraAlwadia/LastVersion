@@ -15,16 +15,6 @@ const responsive = {
 
 $(document).ready(function() {
 
-    /************Active class*************/
-    // $(".nav-elements").on('click', 'a', function() {
-
-    //     // remove classname 'active' from all li who already has classname 'active'
-    //     $(".nav-elements a.active").removeClass("active");
-
-    //     // adding classname 'active' to current click li 
-    //     $(this).addClass("active");
-
-    /************Active class*************/
 
 
     /************ owlCarousel *************/
@@ -57,11 +47,19 @@ $(document).ready(function() {
 
         $("#co-info").slideUp("slow", function() {
             $("#team-info").slideDown("slow");
+            $('#co').removeClass('active-btn');
+            $('#team').removeClass('disactive-btn');
+            $('#team').addClass('active-btn');
+            $('#co').addClass('disactive-btn');
         });
     });
     $("#co").click(function() {
         $("#team-info").slideUp("slow", function() {
             $("#co-info").slideDown("slow");
+            $('#team').removeClass('active-btn');
+            $('#co').removeClass('disactive-btn');
+            $('#co').addClass('active-btn');
+            $('#team').addClass('disactive-btn');
         });
     });
 
